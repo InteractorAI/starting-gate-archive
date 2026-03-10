@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { getArticleData, getAllArticles } from '@/lib/articles';
 import styles from './article.module.css';
@@ -57,6 +58,26 @@ export default async function ArticlePage({ params }) {
                                 actualSrc = src.replace('../images/', '/images/');
                             }
                             return <img src={actualSrc} alt={alt || ""} {...props} />;
+                        },
+                        a: ({ node, href, children, ...props }) => {
+                            if (!href) return <a {...props}>{children}</a>;
+
+                            const isInternal = href.startsWith('/') || href.startsWith('#') || (href.endsWith('.md') && !href.startsWith('http'));
+                            let actualHref = href;
+
+                            if (href.endsWith('.md') && !href.startsWith('http')) {
+                                actualHref = `/articles/${href.replace('.md', '')}`;
+                            }
+
+                            if (isInternal) {
+                                return <Link href={actualHref} {...props}>{children}</Link>;
+                            }
+
+                            return (
+                                <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+                                    {children}
+                                </a>
+                            );
                         }
                     }}
                 >
