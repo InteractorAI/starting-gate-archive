@@ -60,6 +60,19 @@ export default function Sidebar({ articles }) {
         items[focusedIndex]?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }, [focusedIndex]);
 
+    // Scroll active item into view on initial load or direct URL access
+    useEffect(() => {
+        if (focusedIndex >= 0 || !listRef.current) return;
+
+        // Small timeout allows DOM to update .active classes before querying
+        setTimeout(() => {
+            const activeItem = listRef.current?.querySelector('.article-link.active');
+            if (activeItem) {
+                activeItem.scrollIntoView({ block: 'center' });
+            }
+        }, 50);
+    }, [pathname, flatArticles, focusedIndex]);
+
     // Focus list container when entering list-navigation mode
     useEffect(() => {
         if (focusedIndex >= 0) {
