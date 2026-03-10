@@ -1,13 +1,17 @@
 import os
+import time
+from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
 import markdownify
 import re
 import uuid
-from datetime import datetime
-
 import concurrent.futures
+
+MAX_RETRIES = 4
+RETRY_BACKOFF = [5, 10, 20, 40]  # seconds between retries
+failed_urls = []  # track permanently failed URLs
 
 url_file = "all_urls.txt"
 urls = []
@@ -46,6 +50,27 @@ def convert_url(url):
 os.makedirs("articles", exist_ok=True)
 os.makedirs("public/images", exist_ok=True)
 
+def fetch_with_retry(url):
+    """Fetch a URL with exponential backoff retries. Returns Response or None."""
+    for attempt in range(MAX_RETRIES):
+        try:
+            response = requests.get(url, timeout=30)
+            if response.status_code == 200:
+                return response
+            elif response.status_code in (429, 503, 502):
+                # Rate limited or server error — wait and retry
+                wait = RETRY_BACKOFF[attempt]
+                print(f"[{response.status_code}] Retrying {url} in {wait}s (attempt {attempt+1}/{MAX_RETRIES})")
+                time.sleep(wait)
+            else:
+                # Other HTTP errors (404 etc.) — don't retry
+                return None
+        except Exception as e:
+            wait = RETRY_BACKOFF[attempt]
+            print(f"[Error] {e} — retrying {url} in {wait}s (attempt {attempt+1}/{MAX_RETRIES})")
+            time.sleep(wait)
+    return None
+
 def process_url(url):
     filename = slugify(url)
     filepath = os.path.join("articles", filename)
@@ -55,15 +80,26 @@ def process_url(url):
         return
         
     try:
-        response = requests.get(url, timeout=30)
-        # Handle wayback machine transient errors mildly
-        if response.status_code != 200: return
+        response = fetch_with_retry(url)
+        if response is None:
+            print(f"[Failed] Giving up on {url}")
+            failed_urls.append(url)
+            return
         
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Extract title
         title_element = soup.find('h3', class_='entry-header')
         title = title_element.get_text(strip=True) if title_element else "Untitled"
+        
+        # Extract author from "Posted by [Name] at" in span.post-footers
+        author = "Nancy Dahlberg"  # default
+        post_footers = soup.find('span', class_='post-footers')
+        if post_footers:
+            footer_text = post_footers.get_text(separator=' ', strip=True)
+            author_match = re.search(r'Posted by\s+(.+?)\s+at\b', footer_text)
+            if author_match:
+                author = author_match.group(1).strip()
         
         # Extract body
         body_element = soup.find('div', class_='entry-body') or soup.find('div', class_='entry-content')
@@ -74,6 +110,14 @@ def process_url(url):
         # Process links inside the body
         for a in body_element.find_all('a', href=True):
             a['href'] = convert_url(a['href'])
+
+        # Unwrap <a> tags that wrap only an <img> (Typepad lightbox links)
+        # so images don't become clickable links in the markdown output.
+        for a in body_element.find_all('a', href=True):
+            img_children = a.find_all('img')
+            non_empty_text = a.get_text(strip=True)
+            if img_children and not non_empty_text:
+                a.unwrap()
             
         for img in body_element.find_all('img', src=True):
             img_src = img['src']
@@ -115,14 +159,36 @@ def process_url(url):
         # Clean up excessive newlines
         content_md = re.sub(r'\n{3,}', '\n\n', content_md).strip()
         
-        # Extract date from wayback machine URL
-        date_str = "March 2012"
-        wayback_match = re.search(r'/web/(\d{4})(\d{2})(\d{2})\d+/', url)
-        if wayback_match:
-            year = int(wayback_match.group(1))
-            month = int(wayback_match.group(2))
-            day = int(wayback_match.group(3))
-            date_str = datetime(year, month, day).strftime("%B %d, %Y")
+        # Extract exact publish date from the page's dtstamp element
+        date_str = None
+        dtstamp = soup.find('span', class_='dtstamp')
+        if dtstamp and dtstamp.get('title'):
+            try:
+                # title is like "2012-02-06T09:01:00-0500"
+                dt = datetime.fromisoformat(dtstamp['title'])
+                date_str = dt.strftime("%B %d, %Y")
+            except Exception:
+                pass
+
+        # Fallback: year/month from the original article URL
+        if not date_str:
+            orig_match = re.search(r'/the-starting-gate/(\d{4})/(\d{2})/', url)
+            if orig_match:
+                year = int(orig_match.group(1))
+                month = int(orig_match.group(2))
+                date_str = datetime(year, month, 1).strftime("%B %d, %Y")
+
+        # Last resort: date from the Wayback Machine snapshot timestamp
+        if not date_str:
+            wayback_match = re.search(r'/web/(\d{4})(\d{2})(\d{2})\d+', url)
+            if wayback_match:
+                year = int(wayback_match.group(1))
+                month = int(wayback_match.group(2))
+                day = int(wayback_match.group(3))
+                date_str = datetime(year, month, day).strftime("%B %d, %Y")
+
+        if not date_str:
+            date_str = "Unknown"
             
         # Save to file
         filename = slugify(url)
@@ -135,6 +201,7 @@ def process_url(url):
             f.write("---\n")
             f.write(f"title: \"{clean_title}\"\n")
             f.write(f"date: \"{date_str}\"\n")
+            f.write(f"author: \"{author}\"\n")
             f.write("---\n\n")
             f.write(f"# {title}\n\n")
             f.write(content_md)
@@ -145,5 +212,11 @@ def process_url(url):
 print(f"Starting to download {len(urls)} articles...")
 with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
     executor.map(process_url, urls)
-    
-print("Finished archiving.")
+
+print(f"\nFinished archiving.")
+if failed_urls:
+    print(f"\n{len(failed_urls)} URLs permanently failed after {MAX_RETRIES} retries:")
+    for u in failed_urls:
+        print(f"  {u}")
+else:
+    print("All articles downloaded successfully.")

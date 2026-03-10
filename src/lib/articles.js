@@ -31,6 +31,7 @@ export function getAllArticles() {
             slug,
             title: matterResult.data.title || slug.replace(/-/g, ' '),
             date: matterResult.data.date || 'Unknown Date',
+            content: matterResult.content,
             ...matterResult.data,
         };
     });

@@ -36,6 +36,13 @@ export default async function ArticlePage({ params }) {
 
     return (
         <div className={`${styles.articleContainer} animate-in`}>
+            {/* Mobile-only back button */}
+            <Link href="/" className={styles.mobileBack}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+                All articles
+            </Link>
             <header className={styles.header}>
                 <h1 className={styles.title}>{article.title}</h1>
                 <div className={styles.meta}>
@@ -46,6 +53,16 @@ export default async function ArticlePage({ params }) {
                         <line x1="3" y1="10" x2="21" y2="10"></line>
                     </svg>
                     {article.date}
+                    {article.author && (
+                        <>
+                            <span className={styles.metaSeparator}>·</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            {article.author}
+                        </>
+                    )}
                 </div>
             </header>
 
@@ -61,6 +78,13 @@ export default async function ArticlePage({ params }) {
                         },
                         a: ({ node, href, children, ...props }) => {
                             if (!href) return <a {...props}>{children}</a>;
+
+                            // If the link wraps only an image (Typepad lightbox pattern),
+                            // strip the link and just render the image unlinked.
+                            // Check the mdast node.children — reliably typed as 'image'.
+                            if (node?.children?.length === 1 && node.children[0]?.type === 'image') {
+                                return <>{children}</>;
+                            }
 
                             const isInternal = href.startsWith('/') || href.startsWith('#') || (href.endsWith('.md') && !href.startsWith('http'));
                             let actualHref = href;
