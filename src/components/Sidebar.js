@@ -128,7 +128,7 @@ export default function Sidebar({ articles }) {
                         <path d="M12 8h.01"></path>
                     </svg>
                     <div>
-                        Archive compiled and hosted courtesy of Miami-based <a href="https://interactor.ai" target="_blank" rel="noopener noreferrer" className="interactor-link">Interactor</a>, the AI concierge for your business.
+                        Archive compiled and hosted courtesy of Miami-based <a href="https://interactor.ai" target="_blank" rel="noopener noreferrer" className="interactor-link">Interactor</a>, the AI concierge for your business. Check <a href="https://miamitech.ai" target="_blank" rel="noopener noreferrer" className="interactor-link">MiamiTech.ai</a> for more resources.
                     </div>
                 </div>
 

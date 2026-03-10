@@ -1,6 +1,7 @@
 import './globals.css';
 import { getAllArticles } from '@/lib/articles';
 import Sidebar from '@/components/Sidebar';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'The Starting Gate | Archive',
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
