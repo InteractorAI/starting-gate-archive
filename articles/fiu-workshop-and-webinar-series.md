@@ -1,6 +1,7 @@
 ---
 title: "FIU offers series of low-cost webinars"
-date: "March 12, 2012"
+date: "February 09, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # FIU offers series of low-cost webinars

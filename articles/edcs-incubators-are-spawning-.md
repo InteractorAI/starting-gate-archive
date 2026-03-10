@@ -1,0 +1,27 @@
+---
+title: "EDC expands its Boca incubator, plans two more locations"
+date: "December 05, 2012"
+author: "Nancy Dahlberg"
+---
+
+# EDC expands its Boca incubator, plans two more locations
+
+[![StrandbergCOVERTECH0900 ROB CTJ](https://web.archive.org/web/20121209020532im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c344feba0970b-120wi "StrandbergCOVERTECH0900 ROB CTJ")](http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c344feba0970b-pi)It was just this past summer that the [Enterprise Development Corporation](http://www.edc-tech.org/) of South Florida and the [Research Park at Florida Atlantic University](http://www.research-park.org/) were celebrating their C. Scott Ellington [Technology Business Incubator's](http://www.research-park.org/technology-business-incubator) move into brand new, expanded space. But just months after the ribbon was cut on their new digs, they are expanding again -- back into their old headquarters space.
+
+The old headquarters space at the research park will be modernized, including with the addition of co-working space by [Caffeine Spaces](http://www.caffeinespaces.com/). The co-working environment will allow the opportunity to include independent programmers and service providers for the startups to bond with and draw talent from, continuing to build the culture for startups to thrive, said Rob Strandberg, president and CEO of EDC (pictured above).
+
+All told, that will just about double the number of entrepreneur teams that can be served at the Boca research park's incubator. Right now the incubator serves about a dozen entrepreneur teams, some with five or six members and growing as well as some service providers. It also houses offices for groups such as the New World Angels, the Institute for Commercialization of Publicly Financed Technology and universities. But the incubator almost immediately had a waiting list. The new space is set to open at the beginning of the year. "We are trying to expand cautiously. We don't want the quality of our services diluted," Strandberg said.
+
+The EDC is also teaming up with Broward College to open an incubator on the first floor of a Broward College building next to the Citrix headquarters in Fort Lauderdale. That project is moving along and should open in the first half of 2013, Strandberg said. "It's a very good strategic location so there has been a lot of interest from startups around the region," said Strandberg. In addition, a group of successful Coral Springs business people is helping to make possible an EDC incubator in their city. "They want to give back to Coral Springs" and they are  offering a fantastic space that will be a mix of offices and co-working space, Strandberg said.  Stay tuned for more on that as plans unfold.
+
+And in Miami, Strandberg said he is interested in continuing to be a resource to entrepreneurs and groups serving entrepreneurs, such as Knight Foundation,  Incubate Miami and others. Strandberg said about 30 percent of the companies the EDC now helps are coming out of Miami-Dade.  "I just think Miami has huge potential," he said.
+
+At the Emerging Technology Business Showcase last week, I met several entrepreneurs who are either housed in the EDC Technology Business Incubator now or are planning to move in.
+
+"We'll be bringing our entire team of four over to the space," said Corey Leff, founder and CEO of Delray Beach-based [SpendLO](http://www.spendlo.com/), which was one of the 18 companies that presented at the showcase. SpendLO is an internet based platform that provides the opportunity for local consumers to post the need for local products or services and the price in which they are willing to pay.  Businesses registered with SpendLO receive notification when postings applicable to their business are submitted and have the opportunity to bid accordingly.  "We want to be at the incubator as we find the energy and passion of like-minded individuals to be contagious," said Leff.  "We'll have access to countless invaluable resources, including advisors, investors, attorneys and of course other aspiring entrepreneurs, all of whom are not only able but willing to contribute their time and knowledge."
+
+[EGLA Communications](http://www.eglacomm.net/) is already a tenant. On Friday, Edwin Hernandez, EGLA Communications' Chief Architect,  announced the launch of “HulaDrive," its new affordably priced cloud storage platform, and launched an [Indiegogo.com](http://www.indiegogo.com/huladrive) campaign for [HulaDrive](http://www.cloudhula.com/), the day it also presented at the ETBS.
+
+[![Incubator1COVERTECH0900 CONF CTJ](https://web.archive.org/web/20121209020532im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee5f38662970d-320wi "Incubator1COVERTECH0900 CONF CTJ")](http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee5f38662970d-pi)[![Incubator3COVERTECH0900 CEGLA CTJ](https://web.archive.org/web/20121209020532im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c344fef1b970b-250wi "Incubator3COVERTECH0900 CEGLA CTJ")](http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c344fef1b970b-pi)
+
+ Photos show the Technology Business Incubator at the Research Park at FAU in Boca Raton. At right is Edwin Hernandez of EGLA Communications working with Andrea Simon in EGAL's offices. Photos are by Charles Trainor Jr. of The Miami Herald.

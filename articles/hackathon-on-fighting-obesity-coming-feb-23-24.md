@@ -1,6 +1,7 @@
 ---
 title: "Hackathon on fighting obesity coming March 23-24"
-date: "February 23, 2013"
+date: "February 16, 2013"
+author: "Nancy Dahlberg"
 ---
 
 # Hackathon on fighting obesity coming March 23-24

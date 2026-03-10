@@ -1,6 +1,7 @@
 ---
 title: "Voices of South Florida tech: What are challenges to building a tech ecosystem?"
-date: "November 29, 2012"
+date: "October 01, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Voices of South Florida tech: What are challenges to building a tech ecosystem?

@@ -1,6 +1,7 @@
 ---
 title: "New contest for small businesses: prize is $25,000 and a makeover"
-date: "July 08, 2012"
+date: "June 25, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # New contest for small businesses: prize is $25,000 and a makeover

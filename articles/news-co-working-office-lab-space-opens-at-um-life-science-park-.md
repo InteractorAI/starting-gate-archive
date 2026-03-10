@@ -1,6 +1,7 @@
 ---
 title: "News: Co-working office, lab space opens at UM Life Science Park"
-date: "July 11, 2012"
+date: "July 06, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # News: Co-working office, lab space opens at UM Life Science Park

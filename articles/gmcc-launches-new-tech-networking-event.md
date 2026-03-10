@@ -1,6 +1,7 @@
 ---
 title: "GMCC launches new tech networking event"
-date: "March 06, 2012"
+date: "February 28, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # GMCC launches new tech networking event

@@ -1,6 +1,7 @@
 ---
 title: "Kauffman report: Capital gains tax exemption could spur $750M in annual startup investments"
-date: "March 12, 2012"
+date: "February 07, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Kauffman report: Capital gains tax exemption could spur $750M in annual startup investments

@@ -1,6 +1,7 @@
 ---
 title: "Hitachi Foundation calls for entries for Young Entrepreneur award for businesses fighting poverty"
-date: "February 24, 2013"
+date: "February 20, 2013"
+author: "Nancy Dahlberg"
 ---
 
 # Hitachi Foundation calls for entries for Young Entrepreneur award for businesses fighting poverty

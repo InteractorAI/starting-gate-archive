@@ -1,6 +1,7 @@
 ---
 title: "This just in: IBM SmartCamp coming to Miami, seeking startups in healthcare"
-date: "April 06, 2012"
+date: "March 30, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # This just in: IBM SmartCamp coming to Miami, seeking startups in healthcare

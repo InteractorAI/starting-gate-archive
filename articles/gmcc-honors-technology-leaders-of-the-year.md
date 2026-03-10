@@ -1,6 +1,7 @@
 ---
 title: "GMCC honors Technology Leaders of the Year"
-date: "September 13, 2015"
+date: "April 27, 2012"
+author: "Nancy Dahlberg 04/27/2012"
 ---
 
 # GMCC honors Technology Leaders of the Year

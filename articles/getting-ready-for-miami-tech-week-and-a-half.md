@@ -1,6 +1,7 @@
 ---
 title: "Getting ready for Social Media Week and Miami Tech Week-and-a-Half?"
-date: "March 11, 2012"
+date: "February 13, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Getting ready for Social Media Week and Miami Tech Week-and-a-Half?

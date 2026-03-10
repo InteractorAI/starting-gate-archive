@@ -1,6 +1,7 @@
 ---
 title: "Are you an entrepreneur? 5,000+ took a poll"
-date: "July 12, 2012"
+date: "July 09, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Are you an entrepreneur? 5,000+ took a poll

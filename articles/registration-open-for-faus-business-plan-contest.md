@@ -1,6 +1,7 @@
 ---
 title: "Registration open for FAU's business plan contest"
-date: "December 31, 2012"
+date: "December 20, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Registration open for FAU's business plan contest

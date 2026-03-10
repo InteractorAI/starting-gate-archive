@@ -1,6 +1,7 @@
 ---
 title: "Get a leap on your business plan with a free workshop Wednesday"
-date: "March 03, 2012"
+date: "February 24, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Get a leap on your business plan with a free workshop Wednesday

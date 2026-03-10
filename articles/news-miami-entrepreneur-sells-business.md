@@ -1,6 +1,7 @@
 ---
 title: "News: Miami entrepreneur sells business"
-date: "December 15, 2012"
+date: "December 12, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # News: Miami entrepreneur sells business

@@ -1,0 +1,27 @@
+---
+title: "How does South Florida foster the startup culture?"
+date: "April 26, 2012"
+author: "Nancy Dahlberg"
+---
+
+# How does South Florida foster the startup culture?
+
+There is a startup culture brewing in South Florida -- on that the panelists at a [Miami Finance Forum](http://miamifinanceforum.com/) breakfast could agree. But a lot of the discussion formed around how does South Florida build on the momentum, taking some lessons from Silicon Valley and other successful ecosystems but at the same time finding its own identity? And how can we unite the assets that we do have -- local universities turning out plenty of students, significant wealth to fund ventures, as well as the area's diversity and cross-cultural connections as the gateway to Latin America -- and foster that growth?
+
+A panel discussion titled, “South Florida’s Start-up Culture: Obstacles and Opportunities for Growth,” with Matt Haggman of [Knight Foundation](http://www.knightfoundation.org/) (moderator); Greg Baty of [Florida Growth Fund](https://floridagrowthfund.com/), Steven A. McKean of [Acceller,](http://www.acceller.com/) Raul Lamus of [New World Angels](http://www.newworldangels.com/), Albert Santalo of [CareCloud](http://www.carecloud.com/), and Michael Wasserman of [H.I.G. Capital](http://higcapital.com/), packed the Banker's Club.
+
+Some interesting tidbits:
+
+**Steven McKean** says South Florida doesn't get enough credit for the companies already here, for instance Citrix. It lacks the big name company, like a Groupon or Facebook, that would help put the region on the map. That said, Miami has to be itself, we are never going to be a Silicon Valley, he says. And we have advantages: The weather is huge, the real estate crash resulting in lower housing prices has helped with recruiting, and the cross-cultural connections are a big plus. "We have to figure out our identity and we have to pool our energy," but he does see a startup culture brewing. He's proudly been basing his fast-growing tech company, Acceller, in the Miami area since 2000. It now employs more than 100.
+
+**Greg Baty** wishes the regions of the state were known for something. if you look at centers of innovation, he said, they often developed around a regional focus and grew from there. Life sciences and healthcare tech come to mind because our demographics and infrastructure already watching. he also said when a very early stage entrepreneur comes to his fund, he challenges that entrepreneur to find a mentor. "There are a lot of wealthy experienced businessmen living here, retired, been there done that, and they really want to mentor someone, pass on their passion and industry knowlege onto the next generation of entrepreneurs." The Florida Growth Fund in a VC that invests in growth-stage companies with a significant Florida presence in areas such as technology and life sciences.
+
+**Michael Wasserman**: It's not necessarily a part of the South Florida entrepreneurial mindset yet to get together, share networks and experiences. Fostering relationships with first-time entrepreneurs, for instance students, is absolutely necessary. It's not that it is not happening here, it is, but it's a matter of critical mass. Wasserman and Baty are among a group of VCs volunteering on a government initiative to identify and promote research and tech companies spawning from universities. H.I.G., headquartered in Miami with offices around the world, is a leading private equity and VC firm with $8.5 billion under management.
+
+**Albert Santalo**: Challenges for South Florida include an isolationist mentality we have to get over. In Silicon Valley, it is ok to fail -- it's a badge of honor. Around here we are very fearful of failing -- we have to develop a culture of risk. He said at some point in the future Carecloud plans to have a fund and an incubator to help young companies. "We'd love to line the city with Carecloud incubated companies that address some aspect of healthcare technology." CareCloud is a healthcare technology company that launched in 2009 and already has more than 100 employees.
+
+**Raul Lamus**: Noting that of the some 150 angel groups in the biggest angel association, only four are from Florida. He does see a need for more angel groups, like his group, but also earlier stage. "What I think we need is another step before the angel round. It's crawling before walking. When I look at a typical business plan that we receive, many of them have skipped very necessary steps. You see major flaws. The need to me is an accelerator culture, from coaches to mentors, the process." New World Angels, with chapters in South Florida and the Tampa area, invests in early-stage Florida companies.
+
+**Brian Breslin**, who founded [Refresh Miami](http://refreshmiami.com/), which has several thousand members around South Florida and holds monthly meetups, pointed out from the audience that his members would love the opportunity to meet and mingle with the caliber of people at the MFF event and learn from their experience and knowledge. But his members have had trouble getting past their secretaries. He questioned, how can we bring these groups together?
+
+Entrepreneurs, what has been your experience?

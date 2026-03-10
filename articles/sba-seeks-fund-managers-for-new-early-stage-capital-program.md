@@ -1,6 +1,7 @@
 ---
 title: "SBA seeks fund managers for new early-stage capital program"
-date: "July 20, 2012"
+date: "May 02, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # SBA seeks fund managers for new early-stage capital program

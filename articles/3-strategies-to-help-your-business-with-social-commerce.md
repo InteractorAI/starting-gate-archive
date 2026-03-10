@@ -1,0 +1,26 @@
+---
+title: "3 strategies to help your business with social commerce"
+date: "February 03, 2013"
+author: "Nancy Dahlberg"
+---
+
+# 3 strategies to help your business with social commerce
+
+**By Tasha Cunningham,** [tasha@bizbytes101.com](https://web.archive.org/web/20130211081949/mailto:tasha@bizbytes101.com)
+
+[![Tasha](../images/6a00d83451b26169e2017ee831afdc970d-120wi.jpg "Tasha")](http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee831afdc970d-pi)In 2010, Facebook founder Mark Zuckerberg said that if he had to guess, social commerce will be the next to blow up. And quite literally, in just over two years, it has. Simply put, social commerce is an offshoot of e-commerce, except that it’s driven by social media and other online tools.
+
+Social commerce involves using social media, product reviews and social influencers to showcase your products and services in ways that will entice consumers to buy. And let’s face it, in today’s ever-changing digital world, consumers are increasingly choosing to spend their hard-earned money online. So much so that according to the U.S. Department of Commerce, retailers racked up an astounding $57 billion in online sales in the third quarter of 2012. The predictions for social commerce are also astonishing with Booz & Company, a global strategy firm, predicting it will generate over $30 billion in revenue by 2015. While this is great news for small business owners looking to attract the avid online shopper, finding effective ways to do it is often difficult.
+
+According to a recent survey conducted by AWeber, a Pennsylvania-based e-mail marketing firm, nearly 25% of the small businesses reported spending four or more hours each week on e-mail marketing. More than 27% reported spending four or more hours marketing on Facebook alone. For those small businesses that use their company website as a marketing tool, nearly 34% said they spend four or more hours every week working on their website. For small businesses that reported maintaining a blog, nearly 30% of small business owners said they spend four or more hours a week doing it.
+
+And who exactly is spending this precious time? 88% of the small businesses survey reported that it’s the owner or CEO that handles the marketing function within the company. After all, the average small business owner wears several hats, not just that of the CEO.  Small business owners also function as bookkeepers, marketing directors and social media strategists. With all that work to do, there is often little time left to devote to the important business on engaging the online consumer.
+
+To help you get started, BizBytes has prepared a list of strategies you can use today. With a mix of easy-to-use apps and tips on how to showcase your products online, these strategies can help you save time and money in your quest for social commerce success.
+
+1. **THE APPS HAVE IT.** Social commerce applications such as Chirpify are making it even easier for consumers to purchase products and services on social networks like Twitter, for example. Chirpify works by turning your tweets into transactions. This enables consumers and businesses to buy products that interest, sell the things they create and even donate to their favorite causes on Twitter. For small business owners, the Chirpify process is easy. First, log on to [www.chirpify.com](http://www.chirpify.com/) and create an account. Next, create and tweet your offer with an engaging product image. Shoppers on Twitter who are interesting in buying your product simply reply to your tweet with the word 'buy.' Finally, once the customer is registered with Chirpify, their transaction is automatically processed and the order is fulfilled. Customers can connect a payment source such as their PayPal account or credit card to Chirpify so that the money to pay for their transaction is automatically deducted when they shop. There are also applications like Chirpify that also work for Facebook. Check out 8th Bridge Graphite here – [www.8thbridge.com](http://www.8thbridge.com/)
+2. **CURATE A COLLECTION.** To make your products visually appealing, curate a collection of your best merchandise and display it on your company website, Facebook, Twitter and other social  
+   networks. Use engaging images that will catch a consumer’s eye. Create a prominent place on your homepage to promote the collection. Take it a step further by getting one of your most loyal customers to do the curating for you.
+3. **TURN YOUR FACEBOOK PAGE INTO A STOREFRONT.** Wouldn’t you love to be able to turn your Facebook page into a storefront for your products and services? Sound impossible? It’s not as hard as you think with apps like Storefront Social that basically do it all for you. While Storefront Social isn’t free, it is cost-effective and pricing is based on the number of products in your storefront. For example, 15 products will run you about $5 a month, while showcasing 1,000 products or more will cost roughly $30 a month. Check out Storefront Social here -<http://storefrontsocial.com/>. You can also explore apps like ShopTab – [www.shoptab.com](http://www.shoptab.com/) to compare features and prices.
+
+[See more tips for social commerce here.](more-tips-and-resouces-for-social-commerce.md)

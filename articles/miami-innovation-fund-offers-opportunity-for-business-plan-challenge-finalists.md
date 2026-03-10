@@ -1,6 +1,7 @@
 ---
 title: "Miami Innovation Fund offers opportunity for Business Plan Challenge finalists"
-date: "March 12, 2012"
+date: "February 06, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Miami Innovation Fund offers opportunity for Business Plan Challenge finalists

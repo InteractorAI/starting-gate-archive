@@ -1,6 +1,7 @@
 ---
 title: "VC funding in state plummets in third-quarter"
-date: "November 02, 2012"
+date: "October 24, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # VC funding in state plummets in third-quarter

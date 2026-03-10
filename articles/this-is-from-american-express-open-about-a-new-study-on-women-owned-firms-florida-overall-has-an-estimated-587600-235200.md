@@ -1,6 +1,7 @@
 ---
 title: "New study: Miami ranks high for women-owned businesses"
-date: "September 17, 2013"
+date: "March 21, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # New study: Miami ranks high for women-owned businesses

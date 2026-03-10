@@ -1,6 +1,7 @@
 ---
 title: "Kauffman study: Nearly half of startups with staying power founded by 'user entrepreneurs'"
-date: "March 08, 2012"
+date: "March 07, 2012"
+author: "Nancy Dahlberg"
 ---
 
 # Kauffman study: Nearly half of startups with staying power founded by 'user entrepreneurs'
