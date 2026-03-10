@@ -108,6 +108,16 @@ export default function Sidebar({ articles }) {
                         Starting Gate
                     </h1>
                 </Link>
+                <div className="courtesy-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16v-4"></path>
+                        <path d="M12 8h.01"></path>
+                    </svg>
+                    <div>
+                        Archive compiled and hosted courtesy of Miami-based <a href="https://interactor.ai" target="_blank" rel="noopener noreferrer" className="interactor-link">Interactor</a>, the AI concierge for your business.
+                    </div>
+                </div>
 
                 <div className="search-container">
                     <svg className="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
