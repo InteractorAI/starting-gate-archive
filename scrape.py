@@ -111,9 +111,6 @@ def process_url(url):
         content_html = str(body_element)
         content_md = markdownify.markdownify(content_html, heading_style="ATX")
         
-        # Force images onto their own lines
-        img_pattern = r'(\[!\[[^\]]*\]\([^\)]+\)\]\([^\)]+\)|!\[[^\]]*\]\([^\)]+\))'
-        content_md = re.sub(img_pattern, r'\n\n\1\n\n', content_md)
         
         # Clean up excessive newlines
         content_md = re.sub(r'\n{3,}', '\n\n', content_md).strip()
