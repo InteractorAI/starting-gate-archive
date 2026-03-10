@@ -1,0 +1,28 @@
+---
+title: "5 key considerations for South Florida startups seeking funding"
+date: "August 19, 2015"
+---
+
+# 5 key considerations for South Florida startups seeking funding
+
+**By Ed Boland**
+
+[![Ed](../images/6a00d83451b26169e201b8d1454380970c-200wi.jpg "Ed")](http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1454380970c-pi)
+
+Since we opened our Miami office in the fall of 2014, thus becoming the first institutional venture capital firm in the MagicCity, we’ve met with countless South Florida startups and are incredibly encouraged by the activity we see in the ecosystem. There are plenty of driven entrepreneurs as well as helpful organizations such as [eMerge Americas](http://emergeamericas.org/), [Knight Foundation](http://knightfoundation.org/), [Rokk3r Labs](http://www.rokk3rlabs.com/), [Wyncode](http://wyncode.co/) and [Carve Communications](http://www.carvecomms.com/), all of which provide much needed support to the growing landscape. Needless to say, we are thrilled to be a part of this budding ecosystem, and intend to help entrepreneurs reach their potential.
+
+That being said, after talking with many entrepreneurs over the past 10 months, there are some key aspects to raising capital that founders should be mindful of as they set out on the fundraising trail. Keep in mind the following are not ranked in any particular order of importance:
+
+**1. Team and Culture**: Many founders believe their product is the most important asset, but at Scout, we look first and foremost at the team and the culture of the company in question. We examine the background of the team, and discuss how these contribute to what the entrepreneur and team are specifically working on. We also explore how the team is structured. At Scout, we make sure every team member has a clear job and is well suited to handle it. We also look to see if a founding team has both a technical and non-technical co-founder, as we have found that this often contributes to a successful team dynamic.
+
+**2. Roadmap and Timeline**: As investors, we like to know what you’ve built and accomplished since the inception of your business. But at Scout, we are just as interested in what you’re planning on doing next. As an entrepreneur, you should be able to confidently and succinctly discuss items such as: the benchmarks and KPIs that your business needs to hit, your product roadmap, who your key hires will be and when you plan on hiring them. If your company is sales-driven, be able to discuss who your target customer is and the typical sales cycle associated with your business. Understanding the future path to success is even more important than the path you took to get a meeting with an investor. Entrepreneurs should be thinking about revenue milestones, key hires, sales pipeline and the key performance indicators that are going to drive your business to the next level.
+
+**3. Product**: As an entrepreneur, there are many distractions that you can get caught up in, including fundraising. While it is easy to get lost in the noise, successful entrepreneurs will be able multitask fundraising and building the product and sales pipeline. Of course, fundraising will take a good chunk of your time, but effective leaders delegate efficiently. Thus, we like to see teams who continue to improve their product during the fundraising process. We see that as a positive signal that teams will be able to successfully iterate on their product over the long run, even with the inevitable distractions that a startup will encounter over its life.
+
+**4. Revenue**: At Scout we are revenue focused because we aim to build sustainable companies that have a clear path to monetization. Although there are many VC firms that tend to invest in companies that focus on user growth before monetization, we do not subscribe to that mindset. As a result, we ask our entrepreneurs to have realistic revenue models as well as plans to achieve those revenue targets. These plans will not just please your investors, but they will set you up for long-term success, making your life much easier down the road.
+
+**5. Reporting**: Although reporting can feel like an onerous task, it is a [crucial aspect of your business](http://mayorbrad.com/2015/03/25/reporting-2/). We’ve found a natural correlation between efficient reporting practices and successful startups. A company report should be sent to investors on a monthly basis and should include metrics such as monthly revenue, cash on hand, monthly burn, and other relevant KPIs. Founders should give these metrics context by describing how the business has evolved over the past month, and by giving any relevant news updates. Finally, founders should outline where they expect the company to be in the next month, and ask investors for any assistance reaching these goals
+
+Hopefully, these tips are helpful to all the entrepreneurs based in Miami.  We’re very excited to be here, and we believe South Florida is on the verge of becoming a household name in the tech-ecosystem. Over the past year, we have seen local entrepreneurs make meaningful strides, and we believe the space will generate strong returns not only for us, but for any investors who are starting to build a thoughtful, [strategic allocation](http://www.scoutventures.com/wp-content/uploads/2014/11/What-is-Your-Venture-Allocation-Scout-Ventures-Oct-2014.pdf) to venture capital.
+
+*Ed Boland is a principal at Scout Ventures. Follow him on Twitter at @edbolandmia.*

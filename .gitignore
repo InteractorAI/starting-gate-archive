@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python
+/venv
+/.venv
+__pycache__/
+
+# scraper artifacts
+all_urls.txt

@@ -1,0 +1,31 @@
+---
+title: "Why Puerto Rico's emerging tech community is poised to take off"
+date: "June 22, 2013"
+---
+
+# Why Puerto Rico's emerging tech community is poised to take off
+
+**
+
+[![PrIMG_2786](https://web.archive.org/web/20130622072622im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201910355266c970c-800wi "PrIMG_2786")](http://miamiherald.typepad.com/.a/6a00d83451b26169e201910355266c970c-pi)
+
+****By Brian Breslin**
+
+[![09112012Brian_Breslin-139-retouched-small](https://web.archive.org/web/20130622072622im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e20192ab1d7df0970d-200wi "09112012Brian_Breslin-139-retouched-small")](http://miamiherald.typepad.com/.a/6a00d83451b26169e20192ab1d7df0970d-pi)
+
+A few months back my friend Giancarlo Gonzalez, the new CIO of Puerto Rico, approached me to discuss the emerging tech community in Miami that I’m a part of.  The conversation quickly shifted to the parallels between the San Juan community and the Miami one. Many things the Puerto Rican community was facing were issues Miami and South Florida faced a few years back. Lack of access to capital, lack of government support, and challenges with starting companies were among the chief issues facing both communities, and some of which we have managed to tackle here in Miami.
+
+Fast-forward to last week and a small contingent of Miami geeks (Brian Breslin & Peter Martinez of Refresh Miami, Wifredo Fernandez & Willie Avendando of LAB Miami, Stonley Baptiste, & Richard Bookman of UM) were on our way to San Juan to help with the [Puerto Rico Tech Summit](http://techsummitpr.com/) civic hackathon and share our experiences building our community as well.  Hundreds of hackers from all over Puerto Rico, the continental USA, and a number of Caribbean nations were grabbing data streams made possible by the CIO’s office and mashing them together to solve problems that were facing every day Puerto Ricans.
+
+[![Pr2IMG_2782](https://web.archive.org/web/20130622072622im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019103552d3a970c-300wi "Pr2IMG_2782")](http://miamiherald.typepad.com/.a/6a00d83451b26169e2019103552d3a970c-pi)
+
+These hackers whom we were there to support and advise had been forming teams and working their ways through all the various APIs (Application Programming Interface) provided by the commonwealth’s government. They came ready to win and compete. There was no cash prize or other incentive to participate other than the opportunity to improve their community in a meaningful way and meet their fellow techies.  The “hacks” produced ranged from solutions to solve absenteeism in schools, to mapping crime data, to solving public transportation scheduling.  The fascinating thing is the types of solutions ranged from smart phone applications to some as “low-tech” as text-messaging services for schools to monitor attendance.  In Miami  and other mainland US hackathons, people are typically targeting their own peers with their solutions so they build bandwidth and smartphone intensive solutions; the Puerto Rican solutions were designed to work even with the lowest common denominators, feature phones and sms. The portability of these solutions becomes apparent when you think about their potential utility in developing nations worldwide.
+
+The whole event was organized by the government but it was decidedly FOR the community, not at all self-serving or an effort to pat themselves on the back.  The Tech Summit was actually an interesting cross-section of enterprise computing players and startup people meeting and becoming aware of one another. Rarely do we see events that cater to both the startups and the corporate giants they often compete with.
+
+Puerto Rico, or at least San Juan, has the framework in place to grow its community in ways that very few Latin cities have.  Puerto Rico has US benefits as well as numerous corporate tax and R&D incentives to boot. With the support the local government is showing for the community (there are a few coworking and incubator spaces in the works in San Juan as well as financial assistance for  
+startups) and the low cost of living paired with access to the US market (don’t forget they are part of the United States), Puerto Rico’s startup community is poised to explode in the next few years.
+
+Hopefully we were able to share enough of our experiences with the Puerto Rican community to help them avoid our missteps and thrive. I sincerely hope we hear more about collaboration between Miami and San Juan in the near future.  As the self-proclaimed gateway to the Latin American community, it only makes sense we start with our brethren to the south.  I’ll definitely be going back to San Juan. Hopefully you’ll join me in connecting with our hermanos in the Caribbean.
+
+*Brian Breslin is the founder of [Refresh Miami](http://www.refreshmiami.com/), [Infinimedia](http://www.infinimedia.com/) and [Maker Market](http://www.makermarket.co/).*
