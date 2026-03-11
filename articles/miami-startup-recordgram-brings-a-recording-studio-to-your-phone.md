@@ -1,0 +1,39 @@
+---
+title: "Miami startup RecordGram brings a recording studio to your phone"
+date: "June 24, 2017"
+author: "Nancy Dahlberg 06/24/2017"
+---
+
+# Miami startup RecordGram brings a recording studio to your phone
+
+**![RECORD%20GRAM%20epf](https://web.archive.org/web/20170703005042im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09a8b8ad970d-800wi "RECORD%20GRAM%20epf")**
+
+***New World Angels' Sandra Arber (left) and Gary Manheimer (right) get together with RecordGram founders, Grammy-winning music producer Winston “DJ Blackout” Thomas; Erik Mendelson, a music industry veteran; and hip-hop’s Shawn Mims on a rooftop in Wynwood. New World Angels invested in RecordGram. PATRICK FARRELL pfarrell@miamiherald.com   
+Technology***
+
+**By Nancy Dahlberg / ndahlberg@miamiherald.com**
+
+A trio from the hip-hop music industry hopes to make its next hit in the worlds of venture capital and technology.  
+Miami startup RecordGram — co-founded by Grammy-winning music producer Winston “DJ Blackout” Thomas, hip-hop musician Shawn Mims and music industry veteran Erik Mendelson — is not unlike the aspiring artist in search of one’s first big break. The team has knocked on endless numbers of doors, made countless pitches, relentlessly sought meetings. And it’s working: Just last month, the “wildcard” startup was named best startup at TechCrunch Disrupt, one of the tech startup world’s largest conferences.  
+Now the company’s co-founders are closing a $1 million investment round from Silicon Valley funders and the Boca Raton-based New World Angels investment group.   
+The basis for all this excitement is RecordGram’s music collaboration app that lets amateur musicians create original songs with award-winning music producers without having to trek to L.A., New York, Nashville or land a spot on “The Voice.” It empowers users “to awaken their inner-musician,” said Mendelson, who has worked in the industry since 2001 leading marketing, promotion and artist management.  
+“We’re democratizing music collaboration so that anyone, regardless of where they live in the world or how much money they have, can create an original song,” said Mendelson, CEO of RecordGram.  
+On the free RecordGram app for the iPhone or iPad, those inner-musicians can search for beats (music sans voice), upload them to a virtual recording studio, write lyrics and record vocals for a professional-sounding audio file. They can also make a music video. Both song and video can be shared to their social-media platforms or privately sent to producers.   
+The company makes money by charging producers a $90 annual subscription, or $9.99 monthly fee, to upload 15 beats per month to the platform. Producers then can lease tracks for up to $4.99 to aspiring artists, retaining copyrights but perhaps discovering the next Justin Bieber, Lil Wayne or Eminem.   
+In less than a year, more than 700 songs and videos have been created from the 500-plus beats currently available in the app, Mendelson said.  
+The trio first came together in 2014 to work on an app called uRemix, a concept that involved creating personal mixes with portions of top songs — say, instrumentals from Dr Dre and vocals from Jay-Z.  
+“I thought it would be easy transitioning from hip-hop to the tech space,” Mims said. “I had a show in San Francisco, and I said ‘You know what, I’m here. Let’s go knock on some VC doors.’ It wasn’t that easy. No doors were opening, no one took any meetings.”  
+As it turned out, the licensing fees were too onerous to make uRemix work, so the collaborators quickly shelved that idea and pivoted in late 2015 to RecordGram.  
+RecordGram sprang from “some of the things I lacked in my musical career in the early stages,” said Mims, best known for This is Why I’m Hot. “I felt it was an unfair system for the artists who are just trying to discover their talent. … In order to collaborate with a producer as an amateur artist, I would have to pay thousands of dollars just to get into that world.”  
+The co-founders bootstrapped development. They were selected for Project Music, a Nashville accelerator backed by 15 of the world’s biggest record labels, management companies and music publishers. After finishing the program in May of 2016, they launched version 1 of RecordGram in the App Store. But investment dollars did not follow.  
+To get noticed, they hit the contest circuit. They entered a YPO pitch contest (they didn’t know the letters stand for Young Presidents’ Organization) and won.   
+After the event, the Enterprise Development Corp., a nonprofit in South Florida that mentors startups, connected them with the 68-member New World Angels. NWA, which has invested more than $10 million in Florida companies since 2014, is best known for its investments in the healthcare space but has also supported South Florida startups Raw Shorts, which provides an explainer video-making tool, human analytics tech company Kairos and gaming startup Synkt Games, among others.   
+“I sensed the excitement in the team,” said Gary Manheimer, a New World Angels member who led the due diligence team on RecordGram. “It is coming to market at the right time. It’s solving a problem in a very exciting way. Looking at their app, it’s very well developed — and fun.”  
+At about the same time, RecordGram pitched at a TechCrunch meetup in Miami, winning two tickets and exhibit space at the media company’s New York conference. Once there, they were unexpectedly selected to pitch on stage as a “wildcard;” two rounds later, they were crowned the winner last month. Mendelson said a high energy, musical pitch that included a live demo separated RecordGram from the pack.   
+Was it the pitch or was it the flamingo print jacket Mendelson wore on stage? Said Mendelson, “People said, ‘There’s the flamingo guy.’ People noticed us.”  
+Whatever the reason, winning the contest was tech validation, Thomas said. “When you look at what we’ve done for a living for a decade or more, it has been strictly music. When you get validation from one of the biggest tech outlets saying you have an incredible startup, that just puts another battery in our pack to go back to the music industry and say, ‘This is what you need to pay attention to.’ … Now we have a lot more doors opening up in the music world, and in the tech world.”  
+New World Angels, which has invested $250,000, hopes to help the team with connections, business direction and mentorship, said Manheimer, who has experience growing companies in the tech and entertainment industries. “They are proven winners. It’s exciting to see these types of companies coming through Florida.”  
+With the funding, RecordGram has hired a chief technology officer and a growth hacker to onboard more users. It has also hired a development team in Russia to give the app a facelift and position it for additional features. Other marketing opportunities and partnerships are in the works.  
+Mendelson says that any company with a music and original content strategy will need RecordGram. “Microsoft, Spotify, Google, Apple and Samsung are all competing in the streaming music space. What will separate them is how they compete with original content. We think what we have created will fill that void.”  
+Among its fans is soul artist Jimmy Levy of Miami, who was encouraged by his manager to try RecordGram, Mendelson said. “Now Grammy award-winning producers are putting together his first album, and several labels have expressed interest in signing him. That’s why when we say RecordGram is built for musicians by musicians, we really mean it.”  
+Nancy Dahlberg: @ndahlberg
