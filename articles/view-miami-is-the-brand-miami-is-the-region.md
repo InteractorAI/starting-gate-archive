@@ -1,0 +1,23 @@
+---
+title: "View: Miami is the brand, Miami is the region"
+date: "January 24, 2014"
+author: "Nancy Dahlberg"
+---
+
+# View: Miami is the brand, Miami is the region
+
+**By Brian Breslin**
+
+[![09112012Brian_Breslin-139-retouched-small](../images/6a00d83451b26169e201a73d606f00970d-200wi.jpg "09112012Brian_Breslin-139-retouched-small")](http://miamiherald.typepad.com/.a/6a00d83451b26169e201a73d606f00970d-pi) Recently, while attending the U.S. Conference of Mayors’ winter meeting, Miami Beach mayor elect Phil Levine made a few regrettable comments that reflect poorly upon our community. Levine argued that focusing Miami Beach on technology and startup ecosystem was “the dumbest idea in the world.” It’s possible that much of the vitriol that has shot up around this might be an overreaction, but there is something to this topic that deserves to be discussed. As an advocate and steward of the local startup and tech community in Miami, I feel compelled to respond. I know the Mayor has already issued a response via Nancy Dahlberg’s Starting Gate column in the Miami Herald (he suggests other areas are better suited in Miami to foster tech), however I feel it necessary to have a voice from someone who has been in the thick of things for nearly a decade.
+
+Mayor Levine was attempting to argue that the City of Miami *Beach* (not to be confused with the City of Miami or Miami Dade County, both completely independent government bodies) shouldn’t focus on things it isn’t good at. That is a completely reasonable request/statement. The city should focus on what it is good at, but it shouldn’t shun the future, and it shouldn’t shun what might not be its strongest industry, but has quite a bit of potential. There are a number of factors that don’t lend to growing a startup community that Miami Beach lacks at the moment (cheap rents, office space, non-transient residents, schools, etc., etc. etc). The industries that Levine suggests are our existing strong points and are a more efficient use of resources, are all industries that depend on technology whether they realize it or not.
+
+I have never met Mayor Levine, however, I have met many of the other local politicians who are in fact supportive of fostering tech here in Miami proper. I have met countless individuals over the years that are truly passionate about making Miami into a 21st century city, a city that leads the world in innovation, a city that embraces technology as it is becoming integral into all of the industries Levine mentioned in his statements. I welcome Mayor Levine to join me to learn about the work we’ve been doing over the last decade to turn Miami (the area) into a city we can be proud to bequeath to our children and grandchildren. In fact I invite all of the local political leaders to come together and discuss the things that our burgeoning tech community needs to accelerate its existing growth.
+
+The biggest issues with Levine’s statements are not that he thinks Miami Beach can’t be a tech hub (who knows if it can or can’t be, but if the mayor isn’t supporting it, it likely won’t make it easier), but that it looks to the outside world that this was a statement about Miami in general. Miami is the brand, Miami is the region, Miami is the name people outside of our sunny enclave use whether it is in reference to Miami Beach, or Kendall, Coral Gables, Wynwood, Aventura, Ft. Lauderdale, and even on some occasions Boca Raton.  We don’t really need Mayor Levine to endorse us, but it wouldn’t hurt to have our elected officials show some pride in what we are trying to accomplish.
+
+The fact of the matter is that we are already “refreshing” Miami’s tech scene. Over 8000 people in Miami know there is something cooking here. Hundreds of people every month are already joining us to “Refresh Miami” and support our local startups and tech companies. We need our community to stand up and pledge their support for Miami tech and startups.
+
+ If you are a member of the Miami tech or startup community and want to show your support, join our Refresh Miami newsletter, signup to be a volunteer, or show your pride by joining our “I Refresh Miami” campaign.  I’m proud of Miami’s tech community, are you?
+
+*Brian Breslin is the founder of*[*Refresh Miami*](http://www.refreshmiami.com/)*,*[*Infinimedia*](http://www.infinimedia.com/)*and*[*Maker Market*](http://www.makermarket.co/)*. Brian is best known his work with Refresh Miami, *the largest technology networking organization in South Florida that* has held 100+ meetups and events with over 8000 members strong.*
