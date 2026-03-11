@@ -1,0 +1,13 @@
+---
+title: "Florida Venture Forum's deadline to apply to present at conference is Friday"
+date: "April 09, 2014"
+author: "Nancy Dahlberg 04/09/2014"
+---
+
+# Florida Venture Forum's deadline to apply to present at conference is Friday
+
+On May 15, the Florida Venture Forum will host its **[Seventh Annual Early Stage Conference](http://r20.rs6.net/tn.jsp?f=001W24jE4ZdVXTM8pcc6QaeSLOBwXc4H4Wu0AWvTMxw80FEVgwfHZs4TH0LnbXynW8a--tsXlfNc3a42qpUIMz9Kzf4FV-YpWufJ9_biVLBMDkkaa4SzKw-mNdDXbCCa6G5ciHZpMC5e7o-0TKb83umz6qn-lnQYTjK56accVk0TULlq2dPIYPnTC2DlHzuz8pz4HJAdoAjABllZrYJbMI_Q7AjtOUmvPN0_tn9vfwQ37aK370L_g0BZrOgPj8gNu4M&c=8fQ_6RfdbWoro1IaegKE0S9_DMG1kYoAj6WPynqVpX2Q_gC8QP6O9w==&ch=84KvThyGJd5ig3PYuryBlBqQGw-veY86syono_fsaU4RuEKXZjAKvA==)** at the Reunion Resort in Orlando. The Florida Venture Forum is now calling for outstanding private companies from the state of Florida to **[apply to present](http://r20.rs6.net/tn.jsp?f=001W24jE4ZdVXTM8pcc6QaeSLOBwXc4H4Wu0AWvTMxw80FEVgwfHZs4TL1lWtiB3DxUmGSpIDnW_mWIIFB0PeDH_5rdrycNsDWcDEcX5N4x2tPkNCbMgKRUtMIuTIEVjqr6yKPuBIt1h1SuchP7gKdATeZwbqv2dFr66pTOKloNq-dA_MDtowNiFtixBe8vpf7bSMukA7TwF7YT5MmJjAq5Rzw5V8vWvtf0T6rlda5nDuNd4FsU_XqBwI4WF4g56VCKnzrDUnVQMuBSlCuLdLbEseXbdBoa3zRs&c=8fQ_6RfdbWoro1IaegKE0S9_DMG1kYoAj6WPynqVpX2Q_gC8QP6O9w==&ch=84KvThyGJd5ig3PYuryBlBqQGw-veY86syono_fsaU4RuEKXZjAKvA==)**at the upcoming Early Stage Conference. The  winning presenter will also present at the 2015 Florida Venture Capital Conference in Hollywood.
+
+Companies wishing to submit an application to present at the conference must e-mail the Executive Summary ([Presenter's Application](http://r20.rs6.net/tn.jsp?f=001W24jE4ZdVXTM8pcc6QaeSLOBwXc4H4Wu0AWvTMxw80FEVgwfHZs4TL1lWtiB3DxUmGSpIDnW_mWIIFB0PeDH_5rdrycNsDWcDEcX5N4x2tPkNCbMgKRUtMIuTIEVjqr6yKPuBIt1h1SuchP7gKdATeZwbqv2dFr66pTOKloNq-dA_MDtowNiFtixBe8vpf7bSMukA7TwF7YT5MmJjAq5Rzw5V8vWvtf0T6rlda5nDuNd4FsU_XqBwI4WF4g56VCKnzrDUnVQMuBSlCuLdLbEseXbdBoa3zRs&c=8fQ_6RfdbWoro1IaegKE0S9_DMG1kYoAj6WPynqVpX2Q_gC8QP6O9w==&ch=84KvThyGJd5ig3PYuryBlBqQGw-veY86syono_fsaU4RuEKXZjAKvA==)) on the website to [pat@flventure.org](http://r20.rs6.net/tn.jsp?f=001W24jE4ZdVXTM8pcc6QaeSLOBwXc4H4Wu0AWvTMxw80FEVgwfHZs4TOjMe-L91-kB_h1K5hosFWRQeBeyf-NxGM8yh5Y_QgqiVq_2dEBS1avi4JaBSem06voCw422xJlNkugB4_M-XOpV1Ib9U17LfoN0-OiJlbg_zFUl-NML_CI=&c=8fQ_6RfdbWoro1IaegKE0S9_DMG1kYoAj6WPynqVpX2Q_gC8QP6O9w==&ch=84KvThyGJd5ig3PYuryBlBqQGw-veY86syono_fsaU4RuEKXZjAKvA==).
+
+The final deadline to apply to present is **April 11, 2014**.

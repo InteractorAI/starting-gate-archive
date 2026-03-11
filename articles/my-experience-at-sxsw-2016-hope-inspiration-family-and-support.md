@@ -1,0 +1,23 @@
+---
+title: "My experience at SXSW 2016: 'Hope, inspiration, family and support'"
+date: "March 25, 2016"
+author: "Nancy Dahlberg 03/25/2016"
+---
+
+# My experience at SXSW 2016: 'Hope, inspiration, family and support'
+
+**![Sxsw hall](https://web.archive.org/web/20160404210057im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c8298473970b-800wi "Sxsw hall")**
+
+**![Michael hall](https://web.archive.org/web/20160404210057im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c8298493970b-200wi "Michael hall")By Michael Hall**
+
+Digital Grass Innovation & Technology's vision is to transform, develop and promote diversity inclusion by increasing the presence of diverse groups in entrepreneurial ventures, innovation and technology. Digital Grass provides symposiums, training curriculums and professional services to develop a more diverse community in South Florida (Miami-Dade, Broward and Palm Beach) nested in a technological hub for entrepreneurs. While the mission started off in South Florida, we quickly realized working with other organizations throughout the nation is more of the legacy we would like to leave. We focus on building a place of comfort for excellence in innovation, technology and entrepreneurship.
+
+Our team of 11 entrepreneurs came together with one goal: to offer the support to others that we didn't receive ourselves. Self motivation can easily lead to depression when you don't have a support system. The biases at play in the tech world may have just made the national platform in the last two years, but I grew up seeing this problem as a young black man from Brewton, Alabama while watching a majority of my family attend Tuskegee University to become engineers when there was a fight for diversity in engineering. I watched my father, Marcus Hall, take this fight into his own hands and build a program recognized by the Pentagon, where he recruited black engineers to work for the Department of Defense. I strive to continue his legacy. Diversity inclusion in technology is not a new problem, rather, it is an old problem in a new sector. In the legal realm, the National Bar Association has spearheaded the fight for inclusion and in the engineering sector, the National Society of Black Engineers champions the cause. No matter how much patience one can have, you must have a leader to take action, but that lies in comfort when you come to South by Southwest and you realize you are not the only one fighting.
+
+As a business owner, innovator and advocate for diversity inclusion in innovation and technology, meeting peers, those you admire, from Brandon Andrews leading the diversity inclusion in Shark Tank to Leslie Miley, the last black engineer of Twitter, to Joey Womack with Goodie Hack’s Founders’ Therapy program, SXSW offers hope, inspiration, family and support. The price you pay for that golden ticket offers the support that drives you for the next nine months to make it through the year because you quickly realize you aren't fighting for popularity, fame or fortune, but a legacy to help others become successful and simply not give up. The moment you realize that someone is not just introducing you to someone because you are black, but simply because you are talented, is priceless. The sharing of resources and the free advice is monumental to helping someone keep their path or pivot to make the best decisions. While the speakers for keynotes and sessions are amazing, nothing beats the conversations in the JW Marriott with meetups by Black Tech Week to the "Capital of Talent' in the We DC House with young amazing talent floating around like Angel Rich of the Wealth Factory while relaxing in the Black Wall Street House with Talib Graves Mann and Jessica Averhart of American Underground.
+
+I can't name the endless count of mentors, friends, leaders and inspiration that is convened at SXSW, but aside from my outlet to Sherell Dorsey, I am not sure who was there to envision this beautiful scenery beyond the techies themselves.
+
+You continue to notice that there are many others doing great things, but what you never see is them getting coverage for just being great, but only because they are a visual representation of "diversity". The role of Digital Grass will remain true to the original name, Digital Grassroots, connecting our community and sharing resources to help us strive forward. And to think it’s only March, we have 9 months left!
+
+*Michael Hall is the founder of Digital Grass Innovation & Technology.*
