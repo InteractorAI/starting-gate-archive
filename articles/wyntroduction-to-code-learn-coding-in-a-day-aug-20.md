@@ -1,0 +1,21 @@
+---
+title: "Wyntroduction to Code: Learn coding in a day Aug. 20"
+date: "August 06, 2016"
+author: "Nancy Dahlberg 08/06/2016"
+---
+
+# Wyntroduction to Code: Learn coding in a day Aug. 20
+
+![Wyncode course](../images/6a00d83451b26169e201b7c8842149970b-800wi.jpg "Wyncode course")
+
+Wyncode Academy, Florida’s first bricks and mortar coding bootcamp teaching computer programming in ten weeks, is hosting *Wyntroduction to Code*: a 1 day bootcamp aimed at those who are interested in coding, but may feel intimidated or are unsure of how to begin learning. The goal of Wyntroduction is to reduce those apprehensions, and introduce attendees to programming in a fun, interactive and engaging way. The day-long workshop consists of mini-lectures interlaced with numerous hands-on practice exercises that attendees complete solo or in pairs. The day culminates with students being guided through the process of developing a simple game that might have seemed impossible before, followed by closing notes on how they can continue their learning in the field.
+
+“We’re excited to host Wyntroduction for the South Florida community. Our technical team designed a low friction approach to getting a real taste for coding in just one day,” Wyncode co-founder Juha Mikkola said. “After a successful test run at the Ancient City Ruby conference hosted by HashRocket, one of the top app development companies in the world, we’re ready to open Wyntroduction to select attendees with a desire to learn more about coding. The demand for coders is ever increasing and it’s a skill set that anyone with a strong work ethic and determination can learn. That said, it can be really hard to know where to begin and this one day bootcamp is designed to fix that problem.”
+
+Wyntroduction to Code costs $25 and is limited to the first 100 attendees, with early bird pricing available for the first 50 registrants, half of which are already sold out. The event will take place at The Lightbox in Wynwood on Saturday, August 20th. Featuring Wyncode’s award winning instructors, a hiring partner and alumni panel, as well as catered breakfast and lunch, the day is sure to be a fun experience for newbie coders. It’s also a great way for for someone that has tried to learn to code online or through other programs to experience the difference that the in person Wyncode experience provides.
+
+Wyncode attracts people without a programming background from a variety of careers: chefs, lawyers, salespeople, accountants, concierges, marketing executives and entrepreneurs who have all learned to code through Wyncode’s intensive, full-time program. The program focuses on tech skills like Ruby, Javascript, HTML and CSS and also on the business skills that startups require to be successful.
+
+Wyncode Academy is licensed by the Florida Department of Education and has graduated over 300 Wyncoders. The majority are currently working in South Florida’s tech ecosystem, with over 80 companies having hired Wyncoders and more than 30 companies hiring at least a second Wyncoder. Wyncode has two campuses, one in the Wynwood Arts District of Miami and the second in Ft. Lauderdale’s Flagler Arts and Technology Village. Wyncode is the leading student reviewed in-person program on industry-leading site [Course Report](https://www.coursereport.com/schools/wyncode), with over 100 reviews and a 4.7 out of 5 star rating.
+
+Interested participants can register for Wyntroduction on [Eventbrite](https://www.eventbrite.com/e/wyntroduction-learn-to-code-in-one-day-tickets-26334481142) or attend Wyncode’s [Pitch Day X](https://www.eventbrite.com/e/wyncode-pitch-day-x-miamis-10th-cohort-tickets-26362174975?aff=es2) on August 11th in Miami or [Pitch Day VI](https://www.eventbrite.com/e/wyncode-pitch-day-vi-fort-lauderdales-6th-cohort-tickets-26467203117?aff=es2) on August 18th in Ft. Lauderdale for more information.  Wyncode’s next full time cohorts begin in Miami on October 3rd and in Ft. Lauderdale on October 10th. Each class is limited to 30 seats. Applications are accepted on a rolling basis and interested candidates should apply at [wyncode.co](http://wyncode.co/)
