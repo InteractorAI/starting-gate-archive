@@ -1,0 +1,21 @@
+---
+title: "Nurturing an entrepreneurial ecosystem: Challenges include tech talent, inclusion, mentorship"
+date: "October 05, 2014"
+author: "Nancy Dahlberg"
+---
+
+# Nurturing an entrepreneurial ecosystem: Challenges include tech talent, inclusion, mentorship
+
+**[![Techhubimage](../images/6a00d83451b26169e201bb079313eb970d-250wi.jpg "Techhubimage")](http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb079313eb970d-pi) By Nancy Dahlberg / ndahlberg@MiamiHerald.com**
+
+It seems like everyone is catching startup fever.
+
+Last week’s breakfast event hosted by commercial law firm [Bilzin Sumberg](http://www.bilzin.com/) was yet another opportunity to explain and share South Florida’s tech-entrepreneurship efforts to date with the greater community. The event, titled “Miami: The Next Entrepreneurial Frontier,” attracted nearly 200 professionals. It wasn’t lost on that well-dressed crowd that what’s good for local technology is good for the economy as a whole.
+
+South Florida’s technology industry has actually been growing for [![04eMerge Americas0506C(2)](https://web.archive.org/web/20141008041547im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6eddfec970b-250wi "04eMerge Americas0506C(2)")](http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6eddfec970b-pi)three decades, and there have certainly been ups and downs. But, as the group at Bilzin Sumberg heard, the most recent efforts to accelerate a tech-entrepreneurial ecosystem hub picked up considerable steam the past 24 months with the proliferation of events, conferences, pitch opportunities, incubators and co-working spaces, many of them supported by the [Knight Foundation](http://www.knightfoundation.org/).
+
+The past year saw two big milestones: the inaugural [eMerge Americas conference](http://www.emergeamericas.org/), which attracted 6,000 people to check out what South Florida’s tech community has to offer and served as a gathering space for tech across the Americas, and the launch of [![SIME MIA](../images/6a00d83451b26169e201bb07931423970d-200wi.jpg "SIME MIA")](http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb07931423970d-pi)[Endeavor Miami](http://www.endeavormiami.org/), which accelerates high-growth companies and has already chosen seven entrepreneurs to support. There were also a number of other firsts: [the inaugural SIME MIA](yoga-led-by-pablo-lucera-at-sime-mia-in-the-new-world-center-on-miami-beach-photo-by-emily-michot-by-nancy-dahlberg-nd-1.md) conference just before Art Basel, the [opening of the Microsoft Innovation Center](microsoft-to-open-innovation-center-in-downtown-miami.md), the first one in the United States, [a Miami Mini-Maker Faire that attracted](1700-turn-out-for-celebration-of-maker-movement-family-fun-.md) nearly 2,000 people (many of them pint-sized), and last month a [focused conference called Fintech Latam](fintech-latam-highlights-a-growing-sector-in-south-florida-americas.md).
+
+Also launched: a [plethora of programs to teach kids technology and entrepreneurship](it-was-a-postcard-perfect-sunday-afternoon-but-the-30-kids-at-the-patricia-and-phillip-frost-museum-of-sciences-teen-tech.md), including Code Fever, Code Now, Black Girls Code, Girls Who Code and Wynwood Maker Camp, among others. And next week Venture Hive’s TechCEO gets underway for Miami-Dade County high school students, teaching entrepreneurship in the real world. At the higher-education level, Florida Atlantic University [rolled out its Tech Runway](fau-to-launch-a-new-entrepreneurship-program-called-tech-runway.md) entrepreneurship accelerator and program and Nova Southeastern is building [an $80 million NSU Center for Collaborative Research](nova-southeastern-breaks-ground-on-80-million-research-center-tech-incubator.md), with a technology incubator, as well as a new big data center. Miami Dade College rolled out Goldman Sachs 10,000 Small Businesses for the community and this fall is [Idea Center @ MDC](mdc-to-open-entrepreneurship-center-names-leaders.md) for its 165,000 students.
+
+The Knight Foundation has committed $8 million in 90 investments in entrepreneurship programs, from Endeavor to The LAB Miami, a coworking and education center in Wynwood, to programs and organizations that help startups and the ecosystem with everything from legal help, talent acquisition, funding, communication and more.
