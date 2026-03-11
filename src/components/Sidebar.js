@@ -6,6 +6,8 @@ import { usePathname, useRouter } from 'next/navigation';
 
 export default function Sidebar({ articles }) {
     const [search, setSearch] = useState('');
+    const [debouncedSearch, setDebouncedSearch] = useState('');
+    const [fullSearchData, setFullSearchData] = useState(null);
     const [focusedIndex, setFocusedIndex] = useState(-1);
     const pathname = usePathname();
     const router = useRouter();
@@ -14,10 +16,35 @@ export default function Sidebar({ articles }) {
 
     const isArticleOpen = pathname !== '/';
 
-    const filteredAndGrouped = useMemo(() => {
-        const query = search.toLowerCase();
+    // Fetch full search data in background
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await fetch('/api/search-data');
+                const data = await res.json();
+                setFullSearchData(data);
+            } catch (err) {
+                console.error("Failed to load search index", err);
+            }
+        };
+        fetchData();
+    }, []);
 
-        const filtered = articles.filter(article =>
+    // Debounce search input
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setDebouncedSearch(search);
+        }, 150);
+        return () => clearTimeout(timer);
+    }, [search]);
+
+    const filteredAndGrouped = useMemo(() => {
+        const query = debouncedSearch.toLowerCase();
+
+        // Use full search data if available, otherwise use initial metadata
+        const dataSource = fullSearchData || articles;
+
+        const filtered = dataSource.filter(article =>
             article.title.toLowerCase().includes(query) ||
             (article.content && article.content.toLowerCase().includes(query)) ||
             article.slug.toLowerCase().includes(query)
@@ -40,7 +67,7 @@ export default function Sidebar({ articles }) {
         });
 
         return grouped;
-    }, [articles, search]);
+    }, [articles, fullSearchData, debouncedSearch]);
 
     // Flat ordered list for index-based navigation
     const flatArticles = useMemo(() =>
@@ -154,6 +181,11 @@ export default function Sidebar({ articles }) {
                         </button>
                     )}
                 </div>
+
+                {/* Search loading indicator */}
+                {search && !fullSearchData && (
+                    <div className="search-loading-hint">Indexing full archive for deep search...</div>
+                )}
 
                 {/* Keyboard hint — hidden on touch devices via CSS */}
                 <div className="keyboard-hint">

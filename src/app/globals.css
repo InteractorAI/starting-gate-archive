@@ -9,8 +9,8 @@
   --border-color: #232329;
   --border-subtle: #1d1d24;
   --text-primary: #f0f0f5;
-  --text-secondary: #9a9aad;
-  --text-muted: #55555e;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
   --accent: #e040fb;
   --accent-alpha: rgba(224, 64, 251, 0.12);
   --scrollbar: #232329;
@@ -27,8 +27,8 @@
     --border-color: #e2e2ec;
     --border-subtle: #ebebf0;
     --text-primary: #0f0f14;
-    --text-secondary: #5c5c6e;
-    --text-muted: #ababbc;
+    --text-secondary: #52525b;
+    --text-muted: #71717a;
     --accent: #c026d3;
     --accent-alpha: rgba(192, 38, 211, 0.1);
     --scrollbar: #d0d0da;
@@ -210,6 +210,29 @@ a {
   color: var(--text-primary);
 }
 
+.search-loading-hint {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: 8px;
+  font-style: italic;
+  opacity: 0.8;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
 /* ─── Keyboard hint ──────────────────────────────────────────── */
 .keyboard-hint {
   display: none;
@@ -273,6 +296,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-muted);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -360,21 +384,21 @@ a {
 
   body,
   html {
-    overflow: auto;
-    height: auto;
+    overflow: hidden;
+    height: 100dvh;
   }
 
   .app-container {
     flex-direction: column;
-    height: auto;
-    min-height: 100vh;
-    overflow: auto;
+    height: 100dvh;
+    min-height: 100dvh;
+    overflow: hidden;
   }
 
   .sidebar {
     width: 100%;
     min-width: unset;
-    height: auto;
+    height: 100dvh;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
   }
@@ -383,14 +407,23 @@ a {
     display: none;
   }
 
+  /* Let sidebar-content act as a scrollable view inside the 100dvh sidebar */
   .sidebar-content {
-    max-height: 55vh;
+    max-height: none;
+    flex: 1;
+    overflow-y: auto;
   }
 
+  /* Hide main content on mobile homepage, show it when article is open */
   .main-content {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: visible;
+    display: none;
+    height: 100dvh;
+    min-height: 100dvh;
+    overflow-y: auto;
+  }
+
+  .sidebar--hidden-mobile+.main-content {
+    display: block;
   }
 
   .empty-state {

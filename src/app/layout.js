@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const articles = getAllArticles();
+  const articles = getAllArticles({ includeContent: false });
 
   return (
     <html lang="en">

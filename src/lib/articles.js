@@ -7,9 +7,11 @@ const articlesDirectory = path.join(process.cwd(), 'articles');
 
 /**
  * Get all available articles by reading the directory.
+ * @param {Object} options Configuration options
+ * @param {boolean} options.includeContent Whether to include the full article content (default: true)
  * @returns {Array} Array of article metadata objects
  */
-export function getAllArticles() {
+export function getAllArticles(options = { includeContent: true }) {
     if (!fs.existsSync(articlesDirectory)) return [];
 
     // Get all .md files in the articles directory
@@ -27,19 +29,45 @@ export function getAllArticles() {
         const matterResult = matter(fileContents);
 
         // Combine the data with the slug
-        return {
+        const data = {
             slug,
             title: matterResult.data.title || slug.replace(/-/g, ' '),
             date: matterResult.data.date || 'Unknown Date',
-            content: matterResult.content,
             ...matterResult.data,
         };
+
+        if (options.includeContent) {
+            data.content = matterResult.content;
+        }
+
+        return data;
     });
 
     // Sort articles by date descending
     return allArticlesData.sort((a, b) => {
-        return new Date(b.date) - new Date(a.date);
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+
+        // Handle invalid dates by pushing them to the end
+        if (isNaN(dateA.valueOf())) return 1;
+        if (isNaN(dateB.valueOf())) return -1;
+
+        return dateB - dateA;
     });
+}
+
+/**
+ * Get a lightweight index of all articles for client-side search.
+ * This includes content but is optimized for search.
+ */
+export function getSearchData() {
+    const articles = getAllArticles({ includeContent: true });
+    return articles.map(a => ({
+        slug: a.slug,
+        title: a.title,
+        content: a.content,
+        date: a.date
+    }));
 }
 
 /**
