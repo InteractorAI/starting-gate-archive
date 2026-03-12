@@ -21,8 +21,23 @@ export async function generateMetadata({ params }) {
     if (!article) return { title: 'Not Found' };
 
     return {
-        title: `${article.title} | Starting Gate Archive`,
+        title: article.title,
         description: article.content.substring(0, 160).replace(/\n/g, ' ') + '...',
+        alternates: {
+            canonical: `/articles/${slug}`,
+        },
+        openGraph: {
+            title: article.title,
+            description: article.content.substring(0, 160).replace(/\n/g, ' ') + '...',
+            type: 'article',
+            publishedTime: new Date(article.date).toISOString(),
+            authors: [article.author || 'Nancy Dahlberg'],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: article.title,
+            description: article.content.substring(0, 160).replace(/\n/g, ' ') + '...',
+        }
     };
 }
 
