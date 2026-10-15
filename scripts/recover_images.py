@@ -6,13 +6,19 @@ import json
 from pathlib import Path
 import re
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse, urlencode
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE = re.compile(r'!\[[^\]]*\]\((https?://[^\s)]+)')
+IMAGE = re.compile(r'!\[(?:[^\[\]]|\[[^\]]*\])*\]\((https?://[^\s)]+)')
 USER_AGENT = 'StartingGateArchive/1.0 (image preservation; https://startinggate.miamitech.ai)'
+FETCH_LOCK = threading.Lock()
+NEXT_FETCH = 0
+FETCH_DELAY = 0.5
+RATE_LIMITED = threading.Event()
 
 
 def image_extension(data):
@@ -54,6 +60,12 @@ def local_name(url):
 
 
 def fetch(url):
+    global NEXT_FETCH
+    with FETCH_LOCK:
+        time.sleep(max(0, NEXT_FETCH - time.monotonic()))
+        NEXT_FETCH = time.monotonic() + FETCH_DELAY
+    if RATE_LIMITED.is_set():
+        raise HTTPError(url, 429, 'Rate limit circuit is open', {}, None)
     with urlopen(Request(url, headers={'User-Agent': USER_AGENT}), timeout=35) as response:
         # Never save an error page or an unbounded response as an image.
         data = response.read(20 * 1024 * 1024 + 1)
@@ -86,6 +98,7 @@ def recover(url, output):
                     'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}
         except HTTPError as error:
             if error.code == 429:
+                RATE_LIMITED.set()
                 return {'status': 'rate_limited', 'error': str(error)}
             last_error = str(error)
         except (URLError, TimeoutError, ValueError, OSError) as error:
@@ -109,14 +122,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'recovery-downloads')
     parser.add_argument('--limit', type=int, default=0)
-    parser.add_argument('--delay', type=float, default=1.0)
+    parser.add_argument('--delay', type=float, default=0.5)
+    parser.add_argument('--workers', type=int, default=4)
     args = parser.parse_args()
+    global FETCH_DELAY
+    FETCH_DELAY = max(0.5, args.delay)
     args.output.mkdir(parents=True, exist_ok=True)
     image_dir = args.output / 'images'
     image_dir.mkdir(exist_ok=True)
     report_path = args.output / 'report.json'
     report = json.loads(report_path.read_text()) if report_path.exists() else {}
     attempted = 0
+    pending = []
     for url, articles in sources().items():
         name = local_name(url)
         existing = next((p for p in (ROOT / 'public/images').glob(name + '*')
@@ -131,14 +148,24 @@ def main():
         if args.limit and attempted >= args.limit:
             break
         attempted += 1
-        result = recover(url, image_dir)
-        report[url] = {**result, 'articles': articles}
-        report_path.write_text(json.dumps(report, indent=2) + '\n')
-        print(f'{attempted}: {result["status"]} {name}', flush=True)
-        if result['status'] == 'rate_limited':
-            print('Stopping at HTTP 429; report can be resumed after the rate limit clears.', flush=True)
-            break
-        time.sleep(max(0, args.delay))
+        pending.append((url, articles))
+    with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 4))) as executor:
+        futures = {executor.submit(recover, url, image_dir): (url, articles)
+                   for url, articles in pending}
+        completed = 0
+        for future in as_completed(futures):
+            if future.cancelled():
+                continue
+            url, articles = futures[future]
+            result = future.result()
+            report[url] = {**result, 'articles': articles}
+            report_path.write_text(json.dumps(report, indent=2) + '\n')
+            completed += 1
+            print(f'{completed}/{len(pending)}: {result["status"]} {local_name(url)}', flush=True)
+            if result['status'] == 'rate_limited':
+                print('Stopping at HTTP 429; report can be resumed after the rate limit clears.', flush=True)
+                for queued in futures:
+                    queued.cancel()
     report_path.write_text(json.dumps(report, indent=2) + '\n')
     from collections import Counter
     print(dict(Counter(r['status'] for r in report.values())), flush=True)
