@@ -7,10 +7,10 @@ from pathlib import Path
 import re
 import time
 import threading
+from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse, urlencode
-from urllib.request import Request, urlopen
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -106,12 +106,34 @@ def closest_snapshot(original):
     return None
 
 
-def recover(url, output, try_original=False):
+def variant_snapshots(original):
+    match = re.search(r'/([a-f0-9]{30,})-[^/]+$', urlparse(original).path)
+    if not match:
+        return
+    asset = match[1]
+    prefixes = [f'https://miamiherald.typepad.com/.a/{asset}']
+    prefixes += [f'https://a{i}.typepad.com/{asset}' for i in range(8)]
+    for prefix in prefixes:
+        query = urlencode({'url': prefix, 'matchType': 'prefix', 'output': 'json',
+                           'filter': 'statuscode:200', 'collapse': 'urlkey',
+                           'fl': 'timestamp,original', 'limit': 50})
+        rows = json.loads(fetch('https://web.archive.org/cdx/search/cdx?' + query))
+        if not rows:
+            continue
+        # Prefer full-size originals and larger saved renditions of this exact asset.
+        def score(row):
+            size = re.search(r'-(\d+)wi', row[1])
+            return 100000 if row[1].endswith('-pi') else int(size[1]) if size else 0
+        for timestamp, source in sorted(rows[1:], key=score, reverse=True)[:8]:
+            yield f'https://web.archive.org/web/{timestamp}im_/{source}'
+
+
+def recover(url, output, try_original=False, try_variants=False, resolve_closest=True):
     original = re.sub(r'^https?://web\.archive\.org/web/\d+[^/]*/', '', url)
     attempts = [url]
     last_error = None
     transient = False
-    if 'web.archive.org' in url:
+    if 'web.archive.org' in url and resolve_closest:
         try:
             snapshot = closest_snapshot(original)
             if snapshot:
@@ -129,8 +151,11 @@ def recover(url, output, try_original=False):
             # Pillow verifies the entire downloaded file, not just its MIME type.
             from PIL import Image
             import io
-            with Image.open(io.BytesIO(data)) as image:
-                image.load()
+            try:
+                with Image.open(io.BytesIO(data)) as image:
+                    image.load()
+            except (OSError, ValueError) as error:
+                raise ValueError('Downloaded image cannot be decoded: ' + str(error)) from error
             name = local_name(url)
             if not Path(name).suffix:
                 name += extension
@@ -149,7 +174,7 @@ def recover(url, output, try_original=False):
             transient = True
         except ValueError as error:
             last_error = str(error)
-        if len(attempts) == 1 and 'web.archive.org' in url:
+        if len(attempts) == 1 and 'web.archive.org' in url and resolve_closest:
             try:
                 snapshot = closest_snapshot(original)
                 if snapshot and snapshot != candidate:
@@ -168,18 +193,35 @@ def recover(url, output, try_original=False):
                 result = recover(snapshot, output)
                 if result['status'] in ('recovered', 'rate_limited'):
                     return result
+                if result['status'] == 'retry_needed':
+                    transient = True
+                last_error += '; full-size original: ' + str(result.get('error'))
         except (HTTPError, URLError, TimeoutError, ValueError, OSError) as error:
             last_error += '; original image lookup: ' + str(error)
             if isinstance(error, HTTPError) and error.code == 429:
                 RATE_LIMITED.set()
                 return {'status': 'rate_limited', 'error': last_error}
             transient = True
+    if try_variants:
+        try:
+            for snapshot in variant_snapshots(original):
+                result = recover(snapshot, output, resolve_closest=False)
+                if result['status'] in ('recovered', 'rate_limited'):
+                    return result
+                if result['status'] == 'retry_needed':
+                    transient = True
+        except (HTTPError, URLError, TimeoutError, ValueError, OSError) as error:
+            if isinstance(error, HTTPError) and error.code == 429:
+                RATE_LIMITED.set()
+                return {'status': 'rate_limited', 'error': str(error)}
+            last_error += '; variant lookup: ' + str(error)
+            transient = True
     return {'status': 'retry_needed' if transient else 'unavailable', 'error': last_error}
 
 
-def recover_with_retry(url, output, try_original):
+def recover_with_retry(url, output, try_original, try_variants):
     for attempt in range(1, 4):
-        result = recover(url, output, try_original)
+        result = recover(url, output, try_original, try_variants)
         result['attempts'] = attempt
         if result['status'] != 'retry_needed':
             return result
@@ -195,6 +237,7 @@ def main():
     parser.add_argument('--delay', type=float, default=0.5)
     parser.add_argument('--workers', type=int, default=4)
     parser.add_argument('--originals', action='store_true', help='Also try full-size Typepad originals')
+    parser.add_argument('--variants', action='store_true', help='Search saved sizes and Typepad CDN aliases')
     parser.add_argument('--resume', type=Path, help='Seed the report from an earlier recovery pass')
     parser.add_argument('--shard', type=int, default=0)
     parser.add_argument('--shards', type=int, default=1)
@@ -230,7 +273,7 @@ def main():
         attempted += 1
         pending.append((url, articles))
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 4))) as executor:
-        futures = {executor.submit(recover_with_retry, url, image_dir, args.originals): (url, articles)
+        futures = {executor.submit(recover_with_retry, url, image_dir, args.originals, args.variants): (url, articles)
                    for url, articles in pending}
         completed = 0
         for future in as_completed(futures):
@@ -238,7 +281,8 @@ def main():
                 continue
             url, articles = futures[future]
             result = future.result()
-            report[url] = {**result, 'articles': articles}
+            report[url] = {**result, 'articles': articles,
+                           'checked_at': datetime.now(timezone.utc).isoformat()}
             report_path.write_text(json.dumps(report, indent=2) + '\n')
             completed += 1
             print(f'{completed}/{len(pending)}: {result["status"]} {local_name(url)}', flush=True)
