@@ -20,6 +20,7 @@ FETCH_LOCK = threading.Lock()
 NEXT_FETCH = 0
 FETCH_DELAY = 0.5
 RATE_LIMITED = threading.Event()
+CDX_DISABLED = threading.Event()
 SESSIONS = threading.local()
 
 
@@ -113,11 +114,20 @@ def variant_snapshots(original):
     asset = match[1]
     prefixes = [f'https://miamiherald.typepad.com/.a/{asset}']
     prefixes += [f'https://a{i}.typepad.com/{asset}' for i in range(8)]
+    seen = set()
     for prefix in prefixes:
+        if CDX_DISABLED.is_set():
+            break
         query = urlencode({'url': prefix, 'matchType': 'prefix', 'output': 'json',
                            'filter': 'statuscode:200', 'collapse': 'urlkey',
                            'fl': 'timestamp,original', 'limit': 50})
-        rows = json.loads(fetch('https://web.archive.org/cdx/search/cdx?' + query))
+        try:
+            rows = json.loads(fetch('https://web.archive.org/cdx/search/cdx?' + query))
+        except HTTPError as error:
+            if error.code in (403, 429):
+                CDX_DISABLED.set()
+                break
+            raise
         if not rows:
             continue
         # Prefer full-size originals and larger saved renditions of this exact asset.
@@ -125,7 +135,19 @@ def variant_snapshots(original):
             size = re.search(r'-(\d+)wi', row[1])
             return 100000 if row[1].endswith('-pi') else int(size[1]) if size else 0
         for timestamp, source in sorted(rows[1:], key=score, reverse=True)[:8]:
-            yield f'https://web.archive.org/web/{timestamp}im_/{source}'
+            snapshot = f'https://web.archive.org/web/{timestamp}im_/{source}'
+            seen.add(snapshot)
+            yield snapshot
+    # The capture index has a separate quota. Stop querying it when limited,
+    # and use the available-capture API for the same immutable image ID instead.
+    size = re.search(r'-(\d+wi|pi)$', urlparse(original).path)
+    suffixes = list(dict.fromkeys([size[1] if size else '800wi', 'pi', '800wi', '320wi']))
+    for prefix in prefixes:
+        for suffix in suffixes:
+            snapshot = closest_snapshot(prefix + '-' + suffix)
+            if snapshot and snapshot not in seen:
+                seen.add(snapshot)
+                yield snapshot
 
 
 def recover(url, output, try_original=False, try_variants=False, resolve_closest=True):
@@ -273,6 +295,7 @@ def main():
         attempted += 1
         pending.append((url, articles))
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 4))) as executor:
+        pending.sort(key=lambda item: report.get(item[0], {}).get('status') not in ('retry_needed', 'rate_limited'))
         futures = {executor.submit(recover_with_retry, url, image_dir, args.originals, args.variants): (url, articles)
                    for url, articles in pending}
         completed = 0
@@ -282,7 +305,8 @@ def main():
             url, articles = futures[future]
             result = future.result()
             report[url] = {**result, 'articles': articles,
-                           'checked_at': datetime.now(timezone.utc).isoformat()}
+                           'checked_at': datetime.now(timezone.utc).isoformat(),
+                           'variant_index_limited': CDX_DISABLED.is_set()}
             report_path.write_text(json.dumps(report, indent=2) + '\n')
             completed += 1
             print(f'{completed}/{len(pending)}: {result["status"]} {local_name(url)}', flush=True)
