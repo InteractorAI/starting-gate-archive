@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse, urlencode
 from urllib.request import Request, urlopen
+import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE = re.compile(r'!\[(?:[^\[\]]|\[[^\]]*\])*\]\((https?://[^\s)]+)')
@@ -19,6 +20,7 @@ FETCH_LOCK = threading.Lock()
 NEXT_FETCH = 0
 FETCH_DELAY = 0.5
 RATE_LIMITED = threading.Event()
+SESSIONS = threading.local()
 
 
 def image_extension(data):
@@ -34,7 +36,15 @@ def image_extension(data):
 
 
 def valid_image(path):
-    return path.is_file() and image_extension(path.read_bytes()) is not None
+    if not path.is_file() or image_extension(path.read_bytes()) is None:
+        return False
+    from PIL import Image
+    try:
+        with Image.open(path) as image:
+            image.load()
+        return True
+    except (OSError, ValueError):
+        return False
 
 
 def sources():
@@ -66,18 +76,50 @@ def fetch(url):
         NEXT_FETCH = time.monotonic() + FETCH_DELAY
     if RATE_LIMITED.is_set():
         raise HTTPError(url, 429, 'Rate limit circuit is open', {}, None)
-    with urlopen(Request(url, headers={'User-Agent': USER_AGENT}), timeout=35) as response:
+    if not hasattr(SESSIONS, 'session'):
+        SESSIONS.session = requests.Session()
+        SESSIONS.session.headers['User-Agent'] = USER_AGENT
+    try:
+        response = SESSIONS.session.get(url, timeout=(8, 25), stream=True)
+    except requests.RequestException as error:
+        raise URLError(str(error)) from error
+    with response:
+        if response.status_code >= 400:
+            raise HTTPError(url, response.status_code, response.reason, response.headers, None)
         # Never save an error page or an unbounded response as an image.
-        data = response.read(20 * 1024 * 1024 + 1)
+        try:
+            data = response.raw.read(20 * 1024 * 1024 + 1, decode_content=True)
+        except Exception as error:
+            raise URLError(str(error)) from error
         if len(data) > 20 * 1024 * 1024:
             raise ValueError('Response exceeds the 20 MiB image limit')
         return data
 
 
-def recover(url, output):
+def closest_snapshot(original):
+    query = urlencode({'url': original})
+    available = json.loads(fetch('https://archive.org/wayback/available?' + query))
+    closest = available.get('archived_snapshots', {}).get('closest', {})
+    if closest.get('available') and closest.get('status') == '200':
+        snapshot = closest['url'].replace('http://web.archive.org', 'https://web.archive.org')
+        return re.sub(r'(/web/\d+)(/)', r'\1im_\2', snapshot)
+    return None
+
+
+def recover(url, output, try_original=False):
     original = re.sub(r'^https?://web\.archive\.org/web/\d+[^/]*/', '', url)
     attempts = [url]
     last_error = None
+    transient = False
+    if 'web.archive.org' in url:
+        try:
+            snapshot = closest_snapshot(original)
+            if snapshot:
+                attempts = [snapshot]
+        except (HTTPError, URLError, TimeoutError, ValueError, OSError) as error:
+            if isinstance(error, HTTPError) and error.code == 429:
+                RATE_LIMITED.set()
+                return {'status': 'rate_limited', 'error': str(error)}
     for candidate in attempts:
         try:
             data = fetch(candidate)
@@ -88,7 +130,7 @@ def recover(url, output):
             from PIL import Image
             import io
             with Image.open(io.BytesIO(data)) as image:
-                image.verify()
+                image.load()
             name = local_name(url)
             if not Path(name).suffix:
                 name += extension
@@ -101,21 +143,49 @@ def recover(url, output):
                 RATE_LIMITED.set()
                 return {'status': 'rate_limited', 'error': str(error)}
             last_error = str(error)
-        except (URLError, TimeoutError, ValueError, OSError) as error:
+            transient = transient or error.code >= 500 or error.code == 408
+        except (URLError, TimeoutError, OSError) as error:
+            last_error = str(error)
+            transient = True
+        except ValueError as error:
             last_error = str(error)
         if len(attempts) == 1 and 'web.archive.org' in url:
             try:
-                query = urlencode({'url': original})
-                available = json.loads(fetch('https://archive.org/wayback/available?' + query))
-                closest = available.get('archived_snapshots', {}).get('closest', {})
-                if closest.get('available') and closest.get('status') == '200':
-                    snapshot = closest['url'].replace('http://web.archive.org', 'https://web.archive.org')
-                    snapshot = re.sub(r'(/web/\d+)(/)', r'\1im_\2', snapshot)
-                    if snapshot != candidate:
-                        attempts.append(snapshot)
+                snapshot = closest_snapshot(original)
+                if snapshot and snapshot != candidate:
+                    attempts.append(snapshot)
             except (HTTPError, URLError, TimeoutError, ValueError, OSError) as error:
                 last_error += '; availability lookup: ' + str(error)
-    return {'status': 'unavailable', 'error': last_error}
+                if isinstance(error, HTTPError) and error.code == 429:
+                    RATE_LIMITED.set()
+                    return {'status': 'rate_limited', 'error': last_error}
+                transient = True
+    if try_original and re.search(r'typepad\.com/\.a/[a-f0-9]+-\d+wi$', original):
+        try:
+            full_size = re.sub(r'-\d+wi$', '-pi', original)
+            snapshot = closest_snapshot(full_size)
+            if snapshot:
+                result = recover(snapshot, output)
+                if result['status'] in ('recovered', 'rate_limited'):
+                    return result
+        except (HTTPError, URLError, TimeoutError, ValueError, OSError) as error:
+            last_error += '; original image lookup: ' + str(error)
+            if isinstance(error, HTTPError) and error.code == 429:
+                RATE_LIMITED.set()
+                return {'status': 'rate_limited', 'error': last_error}
+            transient = True
+    return {'status': 'retry_needed' if transient else 'unavailable', 'error': last_error}
+
+
+def recover_with_retry(url, output, try_original):
+    for attempt in range(1, 4):
+        result = recover(url, output, try_original)
+        result['attempts'] = attempt
+        if result['status'] != 'retry_needed':
+            return result
+        if attempt < 3:
+            time.sleep(2 ** attempt)
+    return result
 
 
 def main():
@@ -124,6 +194,10 @@ def main():
     parser.add_argument('--limit', type=int, default=0)
     parser.add_argument('--delay', type=float, default=0.5)
     parser.add_argument('--workers', type=int, default=4)
+    parser.add_argument('--originals', action='store_true', help='Also try full-size Typepad originals')
+    parser.add_argument('--resume', type=Path, help='Seed the report from an earlier recovery pass')
+    parser.add_argument('--shard', type=int, default=0)
+    parser.add_argument('--shards', type=int, default=1)
     args = parser.parse_args()
     global FETCH_DELAY
     FETCH_DELAY = max(0.5, args.delay)
@@ -131,18 +205,24 @@ def main():
     image_dir = args.output / 'images'
     image_dir.mkdir(exist_ok=True)
     report_path = args.output / 'report.json'
-    report = json.loads(report_path.read_text()) if report_path.exists() else {}
+    prior_report = report_path if report_path.exists() else args.resume
+    report = json.loads(prior_report.read_text()) if prior_report else {}
     attempted = 0
     pending = []
-    for url, articles in sources().items():
+    for position, (url, articles) in enumerate(sources().items()):
+        if position % args.shards != args.shard:
+            continue
         name = local_name(url)
+        prior = report.get(url, {})
+        prior_file = prior.get('file')
+        if prior_file and Path(prior_file).name == prior_file and valid_image(ROOT / 'public/images' / prior_file):
+            continue
         existing = next((p for p in (ROOT / 'public/images').glob(name + '*')
                          if p.name in (name, name+'.jpg', name+'.png', name+'.gif', name+'.webp')
                          and valid_image(p)), None)
         if existing:
             report[url] = {'status': 'existing', 'file': existing.name, 'articles': articles}
             continue
-        prior = report.get(url, {})
         if prior.get('status') == 'recovered' and valid_image(image_dir / prior['file']):
             continue
         if args.limit and attempted >= args.limit:
@@ -150,7 +230,7 @@ def main():
         attempted += 1
         pending.append((url, articles))
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 4))) as executor:
-        futures = {executor.submit(recover, url, image_dir): (url, articles)
+        futures = {executor.submit(recover_with_retry, url, image_dir, args.originals): (url, articles)
                    for url, articles in pending}
         completed = 0
         for future in as_completed(futures):

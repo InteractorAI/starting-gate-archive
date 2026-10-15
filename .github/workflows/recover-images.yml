@@ -8,17 +8,21 @@ permissions:
 jobs:
   recover:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install Pillow
-      - run: python scripts/recover_images.py --output recovery-downloads
+      - run: python -m pip install Pillow requests
+      - run: python scripts/recover_images.py --originals --resume docs/image-recovery-report.json --shards 4 --shard ${{ matrix.shard }} --output recovery-downloads
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: recovered-images
+          name: recovered-images-${{ matrix.shard }}
           path: recovery-downloads
           retention-days: 7
