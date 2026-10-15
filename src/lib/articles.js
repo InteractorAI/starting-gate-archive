@@ -74,9 +74,19 @@ export function getSearchData() {
  * Get the full content for a single article slug.
  */
 export function getArticleData(slug) {
-    const fullPath = path.join(articlesDirectory, `${slug}.md`);
+    // Next decodes route parameters, while the archive filenames retain URL escapes.
+    let decodedSlug = slug;
+    try {
+        decodedSlug = decodeURIComponent(slug);
+    } catch {
+        // Preserve a literal percent sign in an archive filename.
+    }
+    const fullPath = [`${slug}.md`, `${decodedSlug}.md`, `${encodeURIComponent(slug)}.md`]
+        .filter(fileName => path.basename(fileName) === fileName)
+        .map(fileName => path.join(articlesDirectory, fileName))
+        .find(filePath => fs.existsSync(filePath));
 
-    if (!fs.existsSync(fullPath)) {
+    if (!fullPath) {
         return null;
     }
 

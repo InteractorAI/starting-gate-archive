@@ -10,7 +10,7 @@ import styles from './article.module.css';
 export async function generateStaticParams() {
     const articles = getAllArticles();
     return articles.map((article) => ({
-        slug: article.slug,
+        slug: decodeURIComponent(article.slug),
     }));
 }
 
