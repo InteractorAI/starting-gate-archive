@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { getArticleData, getAllArticles } from '@/lib/articles';
+import { resolveArchiveImage } from '@/lib/archive-images.mjs';
+import imageManifest from '@/data/archive-images.json';
 import styles from './article.module.css';
 
 // This generates static paths for all articles at build time (SSG)
@@ -85,9 +87,9 @@ export default async function ArticlePage({ params }) {
                 <ReactMarkdown
                     components={{
                         img: ({ node, src, alt, ...props }) => {
-                            let actualSrc = src;
-                            if (src && src.startsWith('../images/')) {
-                                actualSrc = src.replace('../images/', '/images/');
+                            const actualSrc = resolveArchiveImage(src, imageManifest);
+                            if (!actualSrc) {
+                                return <span className={styles.imageUnavailable}>Original image unavailable{alt ? `: ${alt}` : ''}</span>;
                             }
                             return <img src={actualSrc} alt={alt || ""} {...props} />;
                         },
@@ -96,8 +98,8 @@ export default async function ArticlePage({ params }) {
 
                             // If the link wraps only an image (Typepad lightbox pattern),
                             // strip the link and just render the image unlinked.
-                            // Check the mdast node.children — reliably typed as 'image'.
-                            if (node?.children?.length === 1 && node.children[0]?.type === 'image') {
+                            // ReactMarkdown supplies a HAST node, where images are img elements.
+                            if (node?.children?.length === 1 && node.children[0]?.tagName === 'img') {
                                 return <>{children}</>;
                             }
 

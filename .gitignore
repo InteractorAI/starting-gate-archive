@@ -48,3 +48,4 @@ __pycache__/
 # scraper artifacts
 all_urls.txt
 scrape.log
+/recovery-downloads/

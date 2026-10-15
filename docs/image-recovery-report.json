@@ -1568,13 +1568,14 @@
     ]
   },
   "https://web.archive.org/web/20150920012937im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1588f2f970c-800wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "ahoy-mates-aventura-based-boatsetter-cruzin-merge-aiming-to-dominate-boat-sharing-marketplace.md"
     ],
-    "checked_at": "2026-10-15T22:46:05.220487+00:00"
+    "checked_at": "2026-10-15T22:50:38.521910+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20120729233408im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e20177439961bf970d-320wi": {
     "status": "recovered",
@@ -1587,13 +1588,14 @@
     ]
   },
   "https://web.archive.org/web/20150920012937im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1588f20970c-250wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Too Many Requests",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "ahoy-mates-aventura-based-boatsetter-cruzin-merge-aiming-to-dominate-boat-sharing-marketplace.md"
     ],
-    "checked_at": "2026-10-15T22:45:52.253909+00:00"
+    "checked_at": "2026-10-15T22:50:57.668950+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140831145540im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6d5a4da970b-800wi": {
     "status": "recovered",
@@ -1749,13 +1751,14 @@
     ]
   },
   "https://web.archive.org/web/20121215214032im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d3ecf85f3970c-320wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "avcc-and-hackday-and-the-winners-are.md"
     ],
-    "checked_at": "2026-10-15T22:45:52.795102+00:00"
+    "checked_at": "2026-10-15T22:50:38.550772+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150511061042im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d10ed42a970c-120wi": {
     "status": "recovered",
@@ -2318,13 +2321,14 @@
     ]
   },
   "https://web.archive.org/web/20160521024432im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1e42f51970c-800wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "co-living-comes-to-miami-roam-opens-at-historic-river-inn.md"
     ],
-    "checked_at": "2026-10-15T22:45:53.321880+00:00"
+    "checked_at": "2026-10-15T22:50:31.339123+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150201003932im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c740169b970b-800wi": {
     "status": "recovered",
@@ -2504,13 +2508,14 @@
     "checked_at": "2026-10-15T22:45:33.618626+00:00"
   },
   "https://web.archive.org/web/20141116105402im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a511b12c62970c-320wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "emerge-tech-conference-international-views.md"
     ],
-    "checked_at": "2026-10-15T22:45:54.505062+00:00"
+    "checked_at": "2026-10-15T22:50:15.440827+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130629090649im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201901dc77369970b-120wi": {
     "status": "recovered",
@@ -2612,13 +2617,14 @@
     ]
   },
   "https://web.archive.org/web/20130106203124im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d3f7d4b24970c-320wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "eo-south-florida-members-optimistic-about-2013-82-plan-to-hire.md"
     ],
-    "checked_at": "2026-10-15T22:45:53.881922+00:00"
+    "checked_at": "2026-10-15T22:51:44.623638+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20151023063242im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d168d0cd970c-800wi": {
     "status": "recovered",
@@ -2758,7 +2764,9 @@
     "attempts": 1,
     "articles": [
       "getmyrx-expands-to-new-york-city.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:48.205021+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130428055937im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201901b7ebf4b970b-800wi": {
     "status": "recovered",
@@ -3129,7 +3137,9 @@
     "attempts": 1,
     "articles": [
       "mentorday-how-miami-leaders-are-paving-the-way-for-entrepreneurs.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:13.492578+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130902020649im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019aff14edc8970c-500wi": {
     "status": "recovered",
@@ -3247,7 +3257,9 @@
     "attempts": 1,
     "articles": [
       "miami-startup-caribu-wins-national-competition-and-100000.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:10.134228+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150924004856im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c7d1a718970b-250wi": {
     "status": "recovered",
@@ -3343,7 +3355,9 @@
     "attempts": 1,
     "articles": [
       "new-carecloud-ceo-right-space-at-the-right-time.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:01.983422+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20121023011053im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee3ea047e970d-320wi": {
     "status": "recovered",
@@ -3522,12 +3536,17 @@
     ]
   },
   "https://web.archive.org/web/20141201230056im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0927d88970c-800wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250911223354im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0927d88970c-800wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7fdd70352690>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201b8d0927d88970c-800wi.jpg",
+    "source": "https://web.archive.org/web/20250911223354im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0927d88970c-800wi",
+    "sha256": "56938d8bf77dc06a291410abb61ec461a53d47c7435ec5efe7584a2c86253531",
+    "bytes": 56700,
+    "attempts": 1,
     "articles": [
       "more-than-100-teen-innovators-and-30-business-coaches-a-descend-onmiami-dade-colleges-mdc-newly-openedidea-centeron-mond.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:38.575024+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20120921045234im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d3c1c3dbc970c-120wi": {
     "status": "recovered",
@@ -3557,7 +3576,9 @@
     "attempts": 1,
     "articles": [
       "reforming-education-hackathon-and-the-winners-are-.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:05.920411+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20141103050126im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0861586970c-300wi": {
     "status": "recovered",
@@ -3736,12 +3757,17 @@
     ]
   },
   "https://web.archive.org/web/20160822234259im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c888afd3970b-300wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20160822234259im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c888afd3970b-300wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7fdd70632900>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201b7c888afd3970b-300wi.jpg",
+    "source": "https://web.archive.org/web/20250913005216im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c888afd3970b-300wi",
+    "sha256": "12bbe3fb5aed4db78348ac3df1cbca17e7e52cd24566ba6651df373c79728b12",
+    "bytes": 109069,
+    "attempts": 1,
     "articles": [
       "ride2md-lyft-team-up-to-fuel-patient-transport.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:40.947418+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20170924043931im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c9220d71970b-200wi": {
     "status": "recovered",
@@ -3837,7 +3863,9 @@
     "attempts": 1,
     "articles": [
       "startup-spotlight-stopoint-delivers-a-fast-easy-way-to-sell-your-gadgets-.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:52.415087+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150318055305im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb0807f2c5970d-800wi": {
     "status": "recovered",
@@ -3864,11 +3892,13 @@
   "https://web.archive.org/web/20150814111741im_/file:///C:\\temp\\msohtml1\\01\\clip_image001.gif": {
     "status": "unavailable",
     "error": "HTTP Error 404: NOT FOUND",
-    "attempts": 2,
+    "attempts": 1,
     "articles": [
       "startup-spotlight-blue-ring-technologies-a-one-stop-shop-for-inventors.md",
       "startup-spotlight-blue-ring-technologies-a-one-stop-shop-for-inventors.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:48.317485+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130925142005im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019aff8d7afb970d-800wi": {
     "status": "recovered",
@@ -4019,7 +4049,9 @@
     "attempts": 1,
     "articles": [
       "tech-cocktail-to-debut-showcase-mixer-featuring-10-startups.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:11.677288+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20121111160955im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee4d15214970d-120wi": {
     "status": "recovered",
@@ -4220,12 +4252,17 @@
     ]
   },
   "https://web.archive.org/web/20140926015641im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6e3a066970b-250wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250910191910im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6e3a066970b-250wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7fdd70353740>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201b7c6e3a066970b-250wi.jpg",
+    "source": "https://web.archive.org/web/20250910191910im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6e3a066970b-250wi",
+    "sha256": "cb1e95e8c27b1c6674c3d8e20c220f3c3863171121cdaeb2d45399f93788e9b6",
+    "bytes": 14681,
+    "attempts": 1,
     "articles": [
       "strong-event-lineup-marks-season-of-the-startup.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:41.686695+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20121111160959im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c332cff4b970b-120wi": {
     "status": "recovered",
@@ -4433,12 +4470,17 @@
     ]
   },
   "https://web.archive.org/web/20131008162635im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019affd566f4970d-120wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250914143303im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2019affd566f4970d-120wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7fdd6fd1cef0>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e2019affd566f4970d-120wi.jpg",
+    "source": "https://web.archive.org/web/20250914143303im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2019affd566f4970d-120wi",
+    "sha256": "b3f34bb9226195c2b2d8b2f672ae0bc9d47e449b089d28dac1826f60fccfb5d6",
+    "bytes": 3488,
+    "attempts": 1,
     "articles": [
       "view-miamis-hemispheric-place-in-tech.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:44.916683+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130114035546im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c35637ca5970b-200wi": {
     "status": "recovered",
@@ -4628,13 +4670,14 @@
     ]
   },
   "https://web.archive.org/web/20150224202634im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0dafef6970c-800wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "by-nancy-dahlberg-ndahlbergmiamiheraldcom-focus-on-customer-experience-first-share-your-idea-widely-to-gain-valuable.md"
     ],
-    "checked_at": "2026-10-15T22:46:04.430224+00:00"
+    "checked_at": "2026-10-15T22:50:32.810596+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20170906170241im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb097703d6970d-800wi": {
     "status": "recovered",
@@ -4725,13 +4768,14 @@
     ]
   },
   "https://web.archive.org/web/20160521024432im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09010376970d-120wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Too Many Requests",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "co-living-comes-to-miami-roam-opens-at-historic-river-inn.md"
     ],
-    "checked_at": "2026-10-15T22:45:51.578595+00:00"
+    "checked_at": "2026-10-15T22:50:58.513924+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140402144234im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a73d9d9f05970d-200wi": {
     "status": "recovered",
@@ -4778,13 +4822,17 @@
     ]
   },
   "https://web.archive.org/web/20160828090305im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb092d6a05970d-800wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "recovered",
+    "file": "6a00d83451b26169e201bb092d6a05970d.jpg",
+    "source": "https://web.archive.org/web/20250914222604im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201bb092d6a05970d",
+    "sha256": "f74a52fb4e4e4384af5551a9469579c5503276e7ebabf4faabf9021a92580d39",
+    "bytes": 253411,
     "attempts": 1,
     "articles": [
       "company-name-fresh-start-beverage-co-banana-wave-headquarters-palm-beach-gardens-concept-fresh-start-beverage-co-is.md"
     ],
-    "checked_at": "2026-10-15T22:45:55.420363+00:00"
+    "checked_at": "2026-10-15T22:49:18.690468+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20120811051422im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201761712ca07970c-320wi": {
     "status": "recovered",
@@ -4875,22 +4923,24 @@
     ]
   },
   "https://web.archive.org/web/20140715144325im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd01ad16970b-320wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "emerge-tech-week-game-on.md"
     ],
-    "checked_at": "2026-10-15T22:45:52.104759+00:00"
+    "checked_at": "2026-10-15T22:50:22.241207+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20121209020532im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee5f38662970d-320wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "edcs-incubators-are-spawning-.md"
     ],
-    "checked_at": "2026-10-15T22:46:01.756946+00:00"
+    "checked_at": "2026-10-15T22:50:17.442604+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140317042133im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a5117f23ba970c-250wi": {
     "status": "recovered",
@@ -4975,7 +5025,9 @@
     "attempts": 1,
     "articles": [
       "entrepreneurship-datebook-workshops-events-in-south-florida-may-16-22.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:59.691580+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20160123193959im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c7f0e64c970b-120wi": {
     "status": "recovered",
@@ -5060,7 +5112,9 @@
     "attempts": 1,
     "articles": [
       "getmyrx-expands-to-new-york-city.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:28.964149+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140805193200im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd05a063970b-300wi": {
     "status": "recovered",
@@ -5552,7 +5606,9 @@
     "attempts": 1,
     "articles": [
       "mentorday-how-miami-leaders-are-paving-the-way-for-entrepreneurs.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:44.432836+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20121106051843im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d3d2d8df0970c-120wi": {
     "status": "recovered",
@@ -5962,12 +6018,17 @@
     ]
   },
   "https://web.archive.org/web/20121129050524im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c33fe7084970b-200wi": {
-    "status": "unavailable",
-    "error": "HTTP Error 404: NOT FOUND",
+    "status": "recovered",
+    "file": "6a00d83451b26169e2017c33fe7084970b-pi.jpg",
+    "source": "https://web.archive.org/web/20150913045045im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c33fe7084970b-pi",
+    "sha256": "ae648eac3ade3d1eccd478316b0a4496d55df018f3f2556b9a163da60554179d",
+    "bytes": 12613,
     "attempts": 1,
     "articles": [
       "prize-news-smb-challenge-100-startup-winners.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:42.725471+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130130095530im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d407a68d2970c-800wi": {
     "status": "recovered",
@@ -6074,7 +6135,9 @@
     "attempts": 1,
     "articles": [
       "sime-mia-update-startup-contest-discounted-tickets-new-sponsors.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:59.816471+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130509083220im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c386dd321970b-120wi": {
     "status": "recovered",
@@ -6099,12 +6162,17 @@
     ]
   },
   "https://web.archive.org/web/20121124233354im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c338af664970b-800wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250910213617im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2017c338af664970b-800wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7f3741ef4650>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e2017c338af664970b-800wi.jpg",
+    "source": "https://web.archive.org/web/20250910213617im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2017c338af664970b-800wi",
+    "sha256": "44282ee21a9a2149ede2fed2fb9834bf51048ae6e7d69cedbe9c7d0baf68e034",
+    "bytes": 80717,
+    "attempts": 1,
     "articles": [
       "secrets-to-starting-and-building-a-business-from-those-who-have-been-there-done-that.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:19.346506+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130216082840im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d410ab60f970c-320wi": {
     "status": "recovered",
@@ -6162,12 +6230,17 @@
     ]
   },
   "https://web.archive.org/web/20160521023109im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09003fe3970d-800wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250910173302im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09003fe3970d-800wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7f37427f9ee0>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201bb09003fe3970d-800wi.jpg",
+    "source": "https://web.archive.org/web/20250910173302im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09003fe3970d-800wi",
+    "sha256": "639c11e381cc75cee852ec34de4efb2f4bedaedaa9ca5432d7ee5a38e150aa74",
+    "bytes": 50373,
+    "attempts": 1,
     "articles": [
       "spotlight-nomads-making-tracks-in-app-development-world-of-video.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:24.376560+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140708050732im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd2845f3970b-300wi": {
     "status": "recovered",
@@ -6241,7 +6314,9 @@
     "attempts": 1,
     "articles": [
       "startups-come-out-of-their-caves-.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:08.942492+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20160521024439im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09012525970d-800wi": {
     "status": "recovered",
@@ -6491,7 +6566,9 @@
     "attempts": 1,
     "articles": [
       "the-us-senate-special-committee-on-aging-will-hold-a-joint-hearing-with-the-us-senate-committee-on-small-business-and-ent.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:59.871457+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20141109205957im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb07a73cdb970d-300wi": {
     "status": "recovered",
@@ -6849,7 +6926,8 @@
       "building-entrepreneurs-where-endeavor-sees-progress-in-year-3.md",
       "building-entrepreneurs-where-endeavor-sees-progress-in-year-3.md"
     ],
-    "checked_at": "2026-10-15T22:45:35.898177+00:00"
+    "checked_at": "2026-10-15T22:50:50.430741+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150207082418im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb07e8f1b1970d-800wi": {
     "status": "recovered",
@@ -7123,7 +7201,8 @@
     "articles": [
       "co-living-comes-to-miami-roam-opens-at-historic-river-inn.md"
     ],
-    "checked_at": "2026-10-15T22:46:00.610518+00:00"
+    "checked_at": "2026-10-15T22:52:02.456832+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20131014011212im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019afff5119b970d-800wi": {
     "status": "recovered",
@@ -7253,7 +7332,8 @@
     "articles": [
       "entrepreneurship-datebook-business-plan-bootcamp-other-events-this-week-in-south-florida.md"
     ],
-    "checked_at": "2026-10-15T22:45:47.125213+00:00"
+    "checked_at": "2026-10-15T22:50:57.769805+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20160612080906im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb090abe79970d-800wi": {
     "status": "unavailable",
@@ -7262,7 +7342,8 @@
     "articles": [
       "endeavor-taps-citizen-co-founders-for-global-network.md"
     ],
-    "checked_at": "2026-10-15T22:45:53.806655+00:00"
+    "checked_at": "2026-10-15T22:52:07.693166+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150719152152im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d123bf86970c-120wi": {
     "status": "recovered",
@@ -7342,13 +7423,14 @@
     ]
   },
   "https://web.archive.org/web/20151012051324im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1628a90970c-120wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "entrepreneurship-datebook-events-workshops-in-south-florida-oct-5-11.md"
     ],
-    "checked_at": "2026-10-15T22:46:03.093432+00:00"
+    "checked_at": "2026-10-15T22:50:44.802010+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20121209065634im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee5c8b810970d-120wi": {
     "status": "recovered",
@@ -7395,13 +7477,14 @@
     ]
   },
   "https://web.archive.org/web/20151023061929im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb08844f3e970d-300wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Too Many Requests",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "former-nfl-star-jason-taylor-joins-hometown-startup-team.md"
     ],
-    "checked_at": "2026-10-15T22:46:02.598195+00:00"
+    "checked_at": "2026-10-15T22:50:44.519174+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140805193200im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a73dc08133970d-120wi": {
     "status": "recovered",
@@ -7503,13 +7586,14 @@
     ]
   },
   "https://web.archive.org/web/20120306072646im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e20168e83d87a7970c-120wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "heading-to-sdsx-tips-for-making-the-most-of-the-experience.md"
     ],
-    "checked_at": "2026-10-15T22:46:04.135202+00:00"
+    "checked_at": "2026-10-15T22:52:19.401311+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20180429120127im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d2dc8efd970c-800wi": {
     "status": "recovered",
@@ -7534,13 +7618,14 @@
     ]
   },
   "https://web.archive.org/web/20151218065030im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb089eb1e6970d-300wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "hate-pumping-gas-gasninjasdelivers-fuel-right-to-your-car-wherever-you-are-studies-show-that-cars-are-parked-for-over-95.md"
     ],
-    "checked_at": "2026-10-15T22:46:03.595268+00:00"
+    "checked_at": "2026-10-15T22:50:53.241500+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20160213141213im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb08b876b9970d-800wi": {
     "status": "recovered",
@@ -7603,7 +7688,9 @@
     "attempts": 1,
     "articles": [
       "httpwwwslidesharenet500startupsgoldrush-or-fools-gold-1-the-secret-to-building-a-healthy-ecosystem-according-to-da.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:07.236558+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150222030547im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c7500079970b-120wi": {
     "status": "recovered",
@@ -7809,7 +7896,9 @@
     "attempts": 1,
     "articles": [
       "meet-the-startups-of-incubate-miami.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:06.274136+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150129184501im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0739007970c-320wi": {
     "status": "recovered",
@@ -7856,12 +7945,17 @@
     ]
   },
   "https://web.archive.org/web/20150404024126im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb0812ec19970d-800wi": {
-    "status": "unavailable",
-    "error": "Response is not image data",
+    "status": "recovered",
+    "file": "6a00d83451b26169e201bb0812ec19970d-pi.png",
+    "source": "https://web.archive.org/web/20150913060018im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb0812ec19970d-pi",
+    "sha256": "27f65215f7de811514ec74ecbde6033c7e8c88330321f69c57a04058c10ae96e",
+    "bytes": 2337725,
     "attempts": 1,
     "articles": [
       "miami-science-barge-wins-knight-cities-challenge-award.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:19.352449+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20141017140507im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d07eb0bd970c-800wi": {
     "status": "recovered",
@@ -8056,7 +8150,9 @@
     "attempts": 1,
     "articles": [
       "new-resource-free-legal-services-for-starts.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:49.956158+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150322191008im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0f0db67970c-800wi": {
     "status": "recovered",
@@ -8229,7 +8325,9 @@
     "attempts": 1,
     "articles": [
       "pitch-perfect-how-i-landed-my-product-on-walmart-shelves.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:54:18.073706+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20131016211115im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019affffd22c970d-800wi": {
     "status": "recovered",
@@ -8397,12 +8495,17 @@
     ]
   },
   "https://web.archive.org/web/20121230184616im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c34b4c795970b-320wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250910115952im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2017c34b4c795970b-320wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7f2ba34d2930>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e2017c34b4c795970b-320wi.jpg",
+    "source": "https://web.archive.org/web/20250910115952im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2017c34b4c795970b-320wi",
+    "sha256": "c5b2ec331864d7aa9457967b282545c98b36e78a6840c53aaebbe0cb2e05a4b1",
+    "bytes": 5094,
+    "attempts": 1,
     "articles": [
       "news-mapyourstartup-unveils-events-feature-university-partners-.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:47.073595+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20141005185213im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a73e1853e8970d-800wi": {
     "status": "recovered",
@@ -8553,7 +8656,9 @@
     "attempts": 1,
     "articles": [
       "spotlight-nomads-making-tracks-in-app-development-world-of-video.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:28.857808+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130920210100im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019aff6a4b95970d-320wi": {
     "status": "recovered",
@@ -8611,12 +8716,17 @@
     ]
   },
   "https://web.archive.org/web/20140910060533im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6dbf412970b-300wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250910205717im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6dbf412970b-300wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7f2ba32cbd10>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201b7c6dbf412970b-300wi.jpg",
+    "source": "https://web.archive.org/web/20140910060533im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c6dbf412970b-300wi",
+    "sha256": "ed55c8c5504498190bad00eab61c3e86fbf1773eb9ac0c76764d3d6ed6531abf",
+    "bytes": 3277,
+    "attempts": 1,
     "articles": [
       "south-florida-fashion-startups-starring-in-documentary.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:53.110523+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20171124033554im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb09d931f7970d-800wi": {
     "status": "recovered",
@@ -8745,7 +8855,9 @@
     "attempts": 1,
     "articles": [
       "tech-talk-homegrown-sktchy-draws-up-big-plans-for-growth-funding.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:54:39.764209+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130925191809im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019aff96a253970b-120wi": {
     "status": "recovered",
@@ -8797,7 +8909,9 @@
     "attempts": 1,
     "articles": [
       "the-brunch-is-over-our-stomachs-are-full-and-the-projects-have-been-presented-the-makin-bacon-hackathon-ii-was-proudly-h.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:55:02.356157+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130613223722im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201901c898761970b-320wi": {
     "status": "recovered",
@@ -8838,7 +8952,9 @@
     "attempts": 1,
     "articles": [
       "the-fresh-diet-to-become-separate-publicly-traded-company.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:55:11.870982+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130124054059im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c35afcc25970b-120wi": {
     "status": "recovered",
@@ -9483,7 +9599,8 @@
     "articles": [
       "co-living-comes-to-miami-roam-opens-at-historic-river-inn.md"
     ],
-    "checked_at": "2026-10-15T22:45:57.920594+00:00"
+    "checked_at": "2026-10-15T22:51:48.341155+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20120922180007im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017ee3a848b2970d-800wi": {
     "status": "recovered",
@@ -9652,13 +9769,14 @@
     ]
   },
   "https://web.archive.org/web/20121209020532im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017c344fef1b970b-250wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "edcs-incubators-are-spawning-.md"
     ],
-    "checked_at": "2026-10-15T22:46:08.315258+00:00"
+    "checked_at": "2026-10-15T22:50:52.775498+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150424123559im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d0a3994d970c-120wi": {
     "status": "recovered",
@@ -9705,13 +9823,14 @@
     ]
   },
   "https://web.archive.org/web/20151023063237im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c7dfc6ab970b-120wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Too Many Requests",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "entrepreneurship-datebook-events-workshops-in-south-florida-oct-19-26.md"
     ],
-    "checked_at": "2026-10-15T22:46:06.790140+00:00"
+    "checked_at": "2026-10-15T22:51:10.764678+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20151218065012im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d183a94b970c-120wi": {
     "status": "unavailable",
@@ -9720,7 +9839,8 @@
     "articles": [
       "entrepreneurship-datebook-events-workshops-in-miami-dec-14-20.md"
     ],
-    "checked_at": "2026-10-15T22:46:06.364895+00:00"
+    "checked_at": "2026-10-15T22:52:37.990992+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150617082340im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c79d1577970b-800wi": {
     "status": "recovered",
@@ -9938,7 +10058,8 @@
     "articles": [
       "httpwwwslidesharenet500startupsgoldrush-or-fools-gold-1-the-secret-to-building-a-healthy-ecosystem-according-to-da.md"
     ],
-    "checked_at": "2026-10-15T22:46:02.586834+00:00"
+    "checked_at": "2026-10-15T22:50:57.589866+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20140908014511im_/http://i.zemanta.com/281227194_80_80.jpg": {
     "status": "recovered",
@@ -10117,13 +10238,14 @@
     ]
   },
   "https://web.archive.org/web/20161210083658im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d161abf4970c-800wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 404: NOT FOUND; availability lookup: HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "launched-nfte-students-pitch-for-11000-in-prizes-and-support-and-the-winners-were-.md"
     ],
-    "checked_at": "2026-10-15T22:46:08.887336+00:00"
+    "checked_at": "2026-10-15T22:50:33.743893+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130821035036im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e20192ac93d7ba970d-800wi": {
     "status": "recovered",
@@ -10214,13 +10336,17 @@
     ]
   },
   "https://web.archive.org/web/20121019205022im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2017d3ccf4b58970c-320wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "recovered",
+    "file": "6a00d83451b26169e2017d3ccf4b58970c.jpg",
+    "source": "https://web.archive.org/web/20250914194559im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2017d3ccf4b58970c",
+    "sha256": "7d881602b31966f48a70c712f5be24694d629ec6a73374a4cf7519d918fc7af9",
+    "bytes": 692208,
     "attempts": 1,
     "articles": [
       "meet-the-startups-of-incubate-miami.md"
     ],
-    "checked_at": "2026-10-15T22:46:07.298910+00:00"
+    "checked_at": "2026-10-15T22:49:16.992500+00:00",
+    "variant_index_limited": false
   },
   "https://web.archive.org/web/20140129060637im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a73d624727970d-250wi": {
     "status": "recovered",
@@ -10344,13 +10470,14 @@
     ]
   },
   "https://web.archive.org/web/20250910162439im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd0e40e4970b-800wi": {
-    "status": "rate_limited",
-    "error": "HTTP Error 429: Rate limit circuit is open",
+    "status": "unavailable",
+    "error": "HTTP Error 404: NOT FOUND",
     "attempts": 1,
     "articles": [
       "miami-startup-debuts-alcohol-freezing-ice-makers.md"
     ],
-    "checked_at": "2026-10-15T22:46:07.798231+00:00"
+    "checked_at": "2026-10-15T22:50:26.815217+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20141015180032im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201bb0796bddf970d-150wi": {
     "status": "recovered",
@@ -10446,7 +10573,9 @@
     "attempts": 1,
     "articles": [
       "new-wynwood-startup-launches-daily-fantasy-sports-app.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:51:50.343954+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20160404210057im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c8298493970b-200wi": {
     "status": "recovered",
@@ -10614,12 +10743,17 @@
     ]
   },
   "https://web.archive.org/web/20140510013721im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd01eac0970b-300wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20160319034615im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd01eac0970b-300wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7faf28672870>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201a3fd01eac0970b-300wi.jpg",
+    "source": "https://web.archive.org/web/20160319034615im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a3fd01eac0970b-300wi",
+    "sha256": "f23c5033f61b1462ca7a8f17712bc8fb430dcd48fa894907114a720cb29f9753",
+    "bytes": 12737,
+    "attempts": 1,
     "articles": [
       "news-admobilize-raises-series-a-round-of-22-million.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:32.215579+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150723135947im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d13aa97a970c-800wi": {
     "status": "recovered",
@@ -10633,12 +10767,17 @@
     ]
   },
   "https://web.archive.org/web/20141125150957im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d08e8819970c-300wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250911193539im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d08e8819970c-300wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7faf288d35c0>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201b8d08e8819970c-300wi.png",
+    "source": "https://web.archive.org/web/20250911193539im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d08e8819970c-300wi",
+    "sha256": "eaea1624a807318a05d0828c15f5ee359565f085a50b81d7abf63dadafb4d9ef",
+    "bytes": 157923,
+    "attempts": 1,
     "articles": [
       "modernizing-medicine-closes-15-million-of-20-million-funding-round.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:29.571508+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20171011185538im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b7c92739cf970b-800wi": {
     "status": "unavailable",
@@ -10646,7 +10785,9 @@
     "attempts": 1,
     "articles": [
       "real-estate-tech-startup-home61-receives-4m-in-funding-will-expand-nationally.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:52:34.439449+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130609053221im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201901c75173f970b-800wi": {
     "status": "recovered",
@@ -10682,12 +10823,17 @@
     ]
   },
   "https://web.archive.org/web/20160125191725im_/http://a6.typepad.com/6a0128755ff1f6970c01b7c7f477ae970b-800wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20230617181638im_/https://a6.typepad.com/6a0128755ff1f6970c01b7c7f477ae970b-800wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7faf28670e60>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a0128755ff1f6970c01b7c7f477ae970b-800wi.png",
+    "source": "https://web.archive.org/web/20230617181638im_/https://a6.typepad.com/6a0128755ff1f6970c01b7c7f477ae970b-800wi",
+    "sha256": "66b04f959b6997bd6da5dab6b569dd915b61b371218d9a367af681e215b5a292",
+    "bytes": 594658,
+    "attempts": 1,
     "articles": [
       "retna-signs-his-work-shown-above-and-below-photo-by-frankie-coletto-of-artceleration-wynwood-yard-above-and-below.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:35.855772+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130329130327im_/http://i.zemanta.com/noimg_127_80_80.jpg": {
     "status": "recovered",
@@ -10822,12 +10968,17 @@
     ]
   },
   "https://web.archive.org/web/20151108114749im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1707d3a970c-800wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250911001147im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1707d3a970c-800wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7faf28938530>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e201b8d1707d3a970c-800wi.jpg",
+    "source": "https://web.archive.org/web/20250911001147im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1707d3a970c-800wi",
+    "sha256": "df788a0eb6b45b659ceb33b884512ebca6852c12863010304056bdfa8bfadfa4",
+    "bytes": 22664,
+    "attempts": 1,
     "articles": [
       "robotics-startup-in-the-spotlight-neocis-.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:36.122896+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130727201011im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201910463b180970c-250wi": {
     "status": "recovered",
@@ -10909,10 +11060,12 @@
   "https://web.archive.org/web/20140408082054im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201a511961768970c-120wi": {
     "status": "unavailable",
     "error": "HTTP Error 404: NOT FOUND",
-    "attempts": 3,
+    "attempts": 1,
     "articles": [
       "sbdc-at-fiu-names-regional-director.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:21.161334+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130818012755im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201901ec16fcf970b-500wi": {
     "status": "recovered",
@@ -11327,7 +11480,9 @@
     "attempts": 1,
     "articles": [
       "velocity-restaurant-payment-app-launches-in-miami.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:00.108595+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20150409014323im_/http://static.typepad.com/.shared:v7e88381:typepad:en_us/tiny_mce/3.5.10/plugins/typepad/img/image.png": {
     "status": "recovered",
@@ -11385,12 +11540,17 @@
     ]
   },
   "https://web.archive.org/web/20130826041701im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e20192ac9d87b5970d-250wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250910173950im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e20192ac9d87b5970d-250wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7faf28673590>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e20192ac9d87b5970d-250wi.jpg",
+    "source": "https://web.archive.org/web/20250910173950im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e20192ac9d87b5970d-250wi",
+    "sha256": "4e4c0389cdc3b2df906b600bae6d404b5d9dc4254a722ac0eb55e51160901cca",
+    "bytes": 25330,
+    "attempts": 1,
     "articles": [
       "sportsmanias-secures-1-million-in-funding-from-mas-equity-partners.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:38.086011+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20160122074346im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201b8d1936ff1970c-800wi": {
     "status": "recovered",
@@ -11420,7 +11580,9 @@
     "attempts": 1,
     "articles": [
       "vigilant-biosciences-cleared-to-launch-oral-cancer-risk-detection-test-across-europe.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:35.912074+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20130628031056im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e201910385761f970c-120wi": {
     "status": "recovered",
@@ -11461,7 +11623,9 @@
     "attempts": 1,
     "articles": [
       "why-you-cant-overlook-a-major-source-of-funding-the-government-1.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:53:39.168363+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20120910023928im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e20177446cc7a2970d-320wi": {
     "status": "recovered",
@@ -11555,14 +11719,21 @@
     "status": "unavailable",
     "error": "Response is not image data",
     "attempts": 1,
-    "articles": []
+    "articles": [],
+    "checked_at": "2026-10-15T22:53:02.684074+00:00",
+    "variant_index_limited": true
   },
   "https://web.archive.org/web/20131118032845im_/http://miamiherald.typepad.com/.a/6a00d83451b26169e2019b0127f5aa970d-800wi": {
-    "status": "retry_needed",
-    "error": "<urlopen error HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20250911041232im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2019b0127f5aa970d-800wi (Caused by ConnectTimeoutError(<HTTPSConnection(host='web.archive.org', port=443) at 0x7faf286df5f0>, 'Connection to web.archive.org timed out. (connect timeout=8)'))>",
-    "attempts": 3,
+    "status": "recovered",
+    "file": "6a00d83451b26169e2019b0127f5aa970d-800wi.jpg",
+    "source": "https://web.archive.org/web/20250911041232im_/https://miamiherald.typepad.com/.a/6a00d83451b26169e2019b0127f5aa970d-800wi",
+    "sha256": "4f35aa23e8dc3a364a315eede69482f5bf0edc2628457f1f26372328db61a149",
+    "bytes": 46367,
+    "attempts": 1,
     "articles": [
       "what-show-me-the-money-looks-like.md"
-    ]
+    ],
+    "checked_at": "2026-10-15T22:50:40.447671+00:00",
+    "variant_index_limited": true
   }
 }
